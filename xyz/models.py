@@ -10,6 +10,11 @@ class Generation(models.Model):
     available_from = models.DateTimeField()
     available_until = models.DateTimeField()
 
+    def __unicode__(self):
+        return self.generation_name
+
+
+
 class Painting(models.Model):
     title = models.CharField(max_length=128)
     author = models.ForeignKey(User, null=True)
@@ -18,5 +23,8 @@ class Painting(models.Model):
     image = models.ImageField(upload_to='paintings', blank=True)
     generation = models.ForeignKey(Generation, null=True)
     parents = models.ManyToManyField("self",blank=True, null=True)
+
+    def __unicode__(self):
+        return self.title
 
 
