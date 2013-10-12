@@ -55,9 +55,9 @@ DATABASES = {
 }
 
 #if 'DATABASE_URL' does no exist, then it's local machine
-#if os.environ.has_key('DATABASE_URL'):
-#    DATABASES['default'] =  dj_database_url.config(default=os.environ['DATABASE_URL'])
-#    STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+if os.environ.has_key('DATABASE_URL'):
+    DATABASES['default'] =  dj_database_url.config(default=os.environ['DATABASE_URL'])
+    STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
