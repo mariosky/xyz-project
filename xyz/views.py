@@ -35,7 +35,7 @@ def index(request):
 
             else:
                 return HttpResponse( 'invalid login')
-                pass
+
                 # Return an 'invalid login' error message.
         else:
             return render_to_response('xyz/signin.html', {}, context_instance=RequestContext(request))
