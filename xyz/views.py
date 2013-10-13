@@ -18,6 +18,7 @@ import json
 
 
 def index(request):
+    print "index"
     if request.user.is_authenticated():
         return render_to_response('xyz/index.html', {}, context_instance=RequestContext(request))
     else:
@@ -28,7 +29,8 @@ def index(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    HttpResponseRedirect('xyz/index.html')# Redirect to a success page.
+                    return HttpResponse( 'nice login')
+                    #HttpResponseRedirect('xyz/index.html')# Redirect to a success page.
                 else:
                 # Return a 'disabled account' error message
                     return HttpResponse( 'disabled account')
