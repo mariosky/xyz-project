@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="signin.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="855" selection-end="855" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="795">
+            <state line="15" column="31" selection-start="502" selection-end="502" vertical-scroll-proportion="0.12710567" vertical-offset="142" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/xyz/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="44" selection-start="531" selection-end="531" vertical-scroll-proportion="0.34456354" vertical-offset="0" max-vertical-offset="1035">
+            <state line="60" column="32" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-21.583334" vertical-offset="382" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -117,9 +117,9 @@
         <option value="$PROJECT_DIR$/templates/xyz_project/index.html" />
         <option value="$PROJECT_DIR$/xyz_project/settings.py" />
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
+        <option value="$PROJECT_DIR$/xyz/views.py" />
         <option value="$PROJECT_DIR$/templates/xyz/index.html" />
         <option value="$PROJECT_DIR$/templates/xyz/signin.html" />
-        <option value="$PROJECT_DIR$/xyz/views.py" />
       </list>
     </option>
   </component>
@@ -583,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="855" selection-end="855" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xyz/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
@@ -599,7 +592,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="531" selection-end="531" vertical-scroll-proportion="0.34456354" vertical-offset="0" max-vertical-offset="1035">
+        <state line="60" column="32" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-21.583334" vertical-offset="382" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="502" selection-end="502" vertical-scroll-proportion="0.12710567" vertical-offset="142" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
