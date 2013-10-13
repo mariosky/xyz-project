@@ -31,10 +31,10 @@ def index(request):
                     HttpResponseRedirect('xyz/index.html')# Redirect to a success page.
                 else:
                 # Return a 'disabled account' error message
-                    print 'disabled account'
-                    pass
+                    return HttpResponse( 'disabled account')
+
             else:
-                print 'invalid login'
+                return HttpResponse( 'invalid login')
                 pass
                 # Return an 'invalid login' error message.
         else:
