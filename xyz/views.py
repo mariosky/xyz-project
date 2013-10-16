@@ -5,12 +5,15 @@
 
 from django.http import HttpResponseRedirect, HttpResponse
 from django.conf import settings
-
+from django.views.decorators.csrf import ensure_csrf_cookie, csrf_exempt
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+
+from models import Painting
+
 import urllib
 import urlparse
 
@@ -41,4 +44,32 @@ def index(request):
                 # Return an 'invalid login' error message.
         else:
             return render_to_response('xyz/signin.html', {}, context_instance=RequestContext(request))
+
+def upload(request):
+     return render_to_response('xyz/upload.html', {}, context_instance=RequestContext(request))
+
+
+
+
+@csrf_exempt
+def upload_minimal(request):
+    if request.method == 'POST':
+
+            #print 'Raw Data___: "%s"' % request.body
+            print request.FILES.keys()
+            print request.FILES["fileToUpload"]
+
+            painting = Painting(title = "Park", author=request.user,summary="Yeah",image=request.FILES["fileToUpload"])
+            painting.save()
+            #json_data = json.loads(request.body)
+
+            #id     = json_data["id"]
+            data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": id}))
+            return HttpResponse(data, mimetype='application/json')
+    else:
+        data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": id}))
+        return HttpResponse(data, mimetype='application/json')
+
+
+
 
