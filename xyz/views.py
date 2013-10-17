@@ -78,14 +78,14 @@ def upload_minimal(request):
             print request.POST[u'generation']
 
 
-            gen = Generation.objects.get(pk=int(request.POST[u'generation']))
+            gen = Generation.objects.get(generation_number=int(request.POST[u'generation']))
 
             painting = Painting(title=request.POST[u'title'], author=request.user, summary=request.POST[u'summary'],
                                 image=request.FILES["fileToUpload"],generation=gen)
             painting.save()
             for _id in request.POST[u'parents'].split(','):
                 painting.parents.add(Painting.objects.get(pk=_id))
-                print "o"
+
             print painting.parents.all()
 
             #json_data = json.loads(request.body)
