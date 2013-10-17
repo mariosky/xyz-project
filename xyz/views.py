@@ -78,7 +78,7 @@ def upload_minimal(request):
             print request.POST[u'generation']
 
 
-            gen = Painting.objects.get(pk=int(request.POST[u'generation']))
+            gen = Generation.objects.get(pk=int(request.POST[u'generation']))
 
             painting = Painting(title=request.POST[u'title'], author=request.user, summary=request.POST[u'summary'],
                                 image=request.FILES["fileToUpload"],generation=gen)
