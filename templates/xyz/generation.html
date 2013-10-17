@@ -53,6 +53,7 @@
   var fd = new FormData(document.getElementById('form1')) ;
   fd.append("title",document.getElementById("title").value);
   fd.append("summary",document.getElementById("Description").value);
+  fd.append("generation","{{next_gen.generation_number}}");
   fd.append("parents",get_parents().join());
 
 
@@ -166,34 +167,17 @@ return parents;
 <section>
  <div class="row">
 
+     {% for painting in paintings %}
       <div class="col-sm-3 col-md-2">
-          <div id="1" class="thumbnail">
-             <a class="fancybox" href="{{STATIC_URL}}love.jpg"> <img src="{{ STATIC_URL}}love.jpg" alt="..."></a>
+          <div id="{{ painting.id }}" class="thumbnail">
+             <a class="fancybox" href="{{STATIC_URL}}{{ painting.image }}"> <img src="{{ STATIC_URL}}{{ painting.image }}" alt="{{ painting.title }}"></a>
              <div class="caption">
                      <a href="#" class="btn btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
              </div>
           </div>
       </div>
+     {% endfor %}
 
-     <div class="col-sm-3 col-md-2">
-          <div id="124" class="thumbnail">
-             <a class="fancybox" href="{{STATIC_URL}}park.jpg"><img src="{{ STATIC_URL}}park.jpg" alt="..."></a>
-              <div class="caption">
-                 <a href="#" class="btn  btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
-
-              </div>
-          </div>
-      </div>
-
-     <div class="col-sm-3 col-md-2">
-          <div id="125" class="thumbnail">
-             <a class="fancybox" href="{{STATIC_URL}}Mondrian_Comp10.jpg"><img src="{{ STATIC_URL}}Mondrian_Comp10.jpg" alt="..."></a>
-              <div class="caption">
-                 <a href="#" class="btn btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
-
-              </div>
-          </div>
-      </div>
 
 
   </div>

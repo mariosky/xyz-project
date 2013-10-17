@@ -48,12 +48,16 @@ def index(request):
 
 
 def generation(request,gen=0):
-    print gen
-
     if request.user.is_authenticated():
+        next_gen = Generation.objects.filter(next_generation=True)[0]
+        current_gen = Generation.objects.filter(generation_number=next_gen.generation_number-1)[0]
+        paintings = gen.painting_set.all()
 
 
-        return render_to_response('xyz/generation.html', {}, context_instance=RequestContext(request))
+
+
+        return render_to_response('xyz/generation.html', {'next_gen':next_gen,"current_gen" : current_gen,
+                                                          "paintings":paintings}, context_instance=RequestContext(request))
     else:
         return render_to_response('xyz/signin.html', {}, context_instance=RequestContext(request))
 
@@ -71,9 +75,13 @@ def upload_minimal(request):
             #print 'Raw Data___: "%s"' % request.body
             print request.FILES.keys()
             print request.FILES["fileToUpload"]
+            print request.POST[u'generation']
+
+
+            gen = Painting.objects.get(pk=int(request.POST[u'generation']))
 
             painting = Painting(title=request.POST[u'title'], author=request.user, summary=request.POST[u'summary'],
-                                image=request.FILES["fileToUpload"])
+                                image=request.FILES["fileToUpload"],generation=gen)
             painting.save()
             for _id in request.POST[u'parents'].split(','):
                 painting.parents.add(Painting.objects.get(pk=_id))
