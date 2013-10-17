@@ -51,7 +51,7 @@ def generation(request,gen=0):
     if request.user.is_authenticated():
         next_gen = Generation.objects.filter(next_generation=True)[0]
         current_gen = Generation.objects.filter(generation_number=next_gen.generation_number-1)[0]
-        paintings = gen.painting_set.all()
+        paintings = current_gen.painting_set.all()
 
 
 

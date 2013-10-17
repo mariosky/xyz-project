@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="25" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1620">
+            <state line="50" column="39" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.45454547" vertical-offset="435" max-vertical-offset="1620">
               <folding>
                 <element signature="e#30#88#0" expanded="true" />
               </folding>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="14" selection-start="751" selection-end="761" vertical-scroll-proportion="0.5294118" vertical-offset="0" max-vertical-offset="680">
+            <state line="32" column="20" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -456,7 +456,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="417" y="22" width="1323" height="1114" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -470,7 +470,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23884103" sideWeight="0.7253521" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2746479" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2746479" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -583,15 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyz/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="25" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1620">
-          <folding>
-            <element signature="e#30#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="2390" selection-end="2390" vertical-scroll-proportion="-36.875" vertical-offset="0" max-vertical-offset="3405">
@@ -617,8 +608,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="751" selection-end="761" vertical-scroll-proportion="0.5294118" vertical-offset="0" max-vertical-offset="680">
+        <state line="32" column="20" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyz/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="39" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.45454547" vertical-offset="435" max-vertical-offset="1620">
+          <folding>
+            <element signature="e#30#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
