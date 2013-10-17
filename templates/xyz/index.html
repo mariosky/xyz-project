@@ -31,6 +31,65 @@
    <link rel="stylesheet" href="{{ STATIC_URL }}fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
    <script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
+          <script  type="text/javascript" charset="utf-8">
+      function fileSelected() {
+      var file = document.getElementById('fileToUpload').files[0];
+      if (file) {
+        var fileSize = 0;
+        if (file.size > 1024 * 1024)
+          fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+        else
+          fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+
+        document.getElementById('fileName').innerHTML = 'Name: ' + file.name;
+        document.getElementById('fileSize').innerHTML = 'Size: ' + fileSize;
+        document.getElementById('fileType').innerHTML = 'Type: ' + file.type;
+
+        }
+     }
+
+     function uploadFile() {
+  var xhr = new XMLHttpRequest();
+  var fd = new FormData(document.getElementById('form1')) ;
+  fd.append("title",document.getElementById("title").value);
+  fd.append("summary",document.getElementById("Description").value);
+
+  /* event listners */
+  xhr.upload.addEventListener("progress", uploadProgress, false);
+  xhr.addEventListener("load", uploadComplete, false);
+  xhr.addEventListener("error", uploadFailed, false);
+  xhr.addEventListener("abort", uploadCanceled, false);
+  /* Be sure to change the url below to the url of your upload server side script */
+  xhr.open("POST", "upload_minimal");
+  xhr.send(fd);
+       }
+
+     function uploadProgress(evt) {
+            if (evt.lengthComputable) {
+       var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+            document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+             }
+            else {
+            document.getElementById('progressNumber').innerHTML = 'unable to compute';
+            }
+    }
+
+function uploadComplete(evt) {
+  /* This event is raised when the server send back a response */
+  alert(evt.target.responseText);
+}
+
+function uploadFailed(evt) {
+  alert("There was an error attempting to upload the file.");
+}
+
+function uploadCanceled(evt) {
+  alert("The upload has been canceled by the user or the browser dropped the connection.");
+}
+
+    </script>
+
+
      <script type="text/javascript" charset="utf-8">
 
       $(document).ready(function() {
@@ -71,12 +130,12 @@
 
     <div class="container">
 
- <h3 id="btn-groups-single">Generaciones</h3>
-     <div class="btn-toolbar" style="margin: 0;">
+    <h3 id="btn-groups-single">Generaciones</h3>
+    <div class="btn-toolbar" style="margin: 0;">
         <div class="btn-group" class="btn btn-default">1</div>
         <div class="btn-group" class="btn btn-default">2</div>
         <div class="btn-group" class="btn btn-default">3</div>
-     </div>
+    </div>
 
 
 
@@ -118,15 +177,32 @@
  </section>
 
 
+  <form id="form1" enctype="multipart/form-data" method="post" action="upload">
 
+    <div class="row">
 
+    <div class="input-group">
+    <span class="input-group-addon">Titulo</span>
+    <input id="title" type="text" class="form-control"/>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Descripción</span>
+        <textarea  id="Description" class="form-control" rows="8" placeholder="Aquí la descripción"></textarea>
+    </div>
 
+    <label for="fileToUpload">Seleccione una imagen para agregar</label><br />
+    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+    </div>
+    <div id="fileName"></div>
+    <div id="fileSize"></div>
+    <div id="fileType"></div>
+    <div class="row">
+      <input type="button" onclick="uploadFile()" value="Upload" />
+    </div>
+    <div id="progressNumber"></div>
 
+  </form>
     </div><!-- /.container -->
 
 

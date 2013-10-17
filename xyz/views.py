@@ -54,17 +54,18 @@ def upload(request):
 @csrf_exempt
 def upload_minimal(request):
     if request.method == 'POST':
-
+            print request.POST[u'title']
             #print 'Raw Data___: "%s"' % request.body
             print request.FILES.keys()
             print request.FILES["fileToUpload"]
 
-            painting = Painting(title = "Park", author=request.user,summary="Yeah",image=request.FILES["fileToUpload"])
+            painting = Painting(title=request.POST[u'title'], author=request.user, summary=request.POST[u'title'],
+                                image=request.FILES["fileToUpload"])
             painting.save()
             #json_data = json.loads(request.body)
 
             #id     = json_data["id"]
-            data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": id}))
+            data = json.dumps({"result" : "saved","error": None, "id": 12})
             return HttpResponse(data, mimetype='application/json')
     else:
         data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": id}))
