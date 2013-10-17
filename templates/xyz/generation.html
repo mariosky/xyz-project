@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ STATIC_URL}}assets/ico/favicon.png">
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ STATIC_URL}}css/starter-template.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ STATIC_URL}}assets/js/html5shiv.js"></script>
+      <script src="{{ STATIC_URL}}assets/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+   <script src="{{ STATIC_URL}}assets/js/jquery.js"></script>
+   <script src="{{ STATIC_URL}}js/bootstrap.min.js"></script>
+   <!-- Add fancyBox -->
+   <link rel="stylesheet" href="{{ STATIC_URL }}fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+   <script type="text/javascript" src="{{ STATIC_URL }}fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+          <script  type="text/javascript" charset="utf-8">
+      function fileSelected() {
+      var file = document.getElementById('fileToUpload').files[0];
+      if (file) {
+        var fileSize = 0;
+        if (file.size > 1024 * 1024)
+          fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+        else
+          fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+
+        document.getElementById('fileName').innerHTML = 'Nombre: ' + file.name;
+        document.getElementById('fileSize').innerHTML = 'Tamaño: ' + fileSize;
+        document.getElementById('fileType').innerHTML = 'Tipo: ' + file.type;
+
+        }
+     }
+
+     function uploadFile() {
+  var xhr = new XMLHttpRequest();
+  var fd = new FormData(document.getElementById('form1')) ;
+  fd.append("title",document.getElementById("title").value);
+  fd.append("summary",document.getElementById("Description").value);
+  fd.append("parents",get_parents().join());
+
+
+
+  /* event listners */
+  xhr.upload.addEventListener("progress", uploadProgress, false);
+  xhr.addEventListener("load", uploadComplete, false);
+  xhr.addEventListener("error", uploadFailed, false);
+  xhr.addEventListener("abort", uploadCanceled, false);
+  /* Be sure to change the url below to the url of your upload server side script */
+  xhr.open("POST", "upload_minimal");
+  xhr.send(fd);
+       }
+
+     function uploadProgress(evt) {
+            if (evt.lengthComputable) {
+       var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+            document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+             }
+            else {
+            document.getElementById('progressNumber').innerHTML = 'imposible calcular';
+            }
+    }
+
+function uploadComplete(evt) {
+  /* This event is raised when the server send back a response */
+  alert(evt.target.responseText);
+}
+
+function uploadFailed(evt) {
+  alert("Hubo un error al tratar de subir la imagen.");
+}
+
+function uploadCanceled(evt) {
+  alert("Se ha cancelado la subida de la imagen o el nevegador ha caido la conexión con el servidor.");
+}
+
+function get_parents()
+{
+var parents = new Array();
+$(".btn-success").parent().parent().each(
+function(i, element){
+parents[i]=element.id;
+
+}
+);
+return parents;
+}
+
+
+    </script>
+
+
+     <script type="text/javascript" charset="utf-8">
+
+      $(document).ready(function() {
+
+	/* This is basic - uses default settings */
+
+		$(".fancybox").fancybox();
+
+
+        $(".caption>.btn").click(function () {
+        $(this).toggleClass("btn-success");
+
+    });
+
+
+
+
+
+
+});
+</script>
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">XYZ Project</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+    <h3 id="btn-groups-single">Generaciones</h3>
+    <div class="btn-toolbar" style="margin: 0;">
+        <div class="btn-group" class="btn btn-default">1</div>
+        <div class="btn-group" class="btn btn-default">2</div>
+        <div class="btn-group" class="btn btn-default">3</div>
+    </div>
+
+
+
+<section>
+ <div class="row">
+
+      <div class="col-sm-3 col-md-2">
+          <div id="1" class="thumbnail">
+             <a class="fancybox" href="{{STATIC_URL}}love.jpg"> <img src="{{ STATIC_URL}}love.jpg" alt="..."></a>
+             <div class="caption">
+                     <a href="#" class="btn btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
+             </div>
+          </div>
+      </div>
+
+     <div class="col-sm-3 col-md-2">
+          <div id="124" class="thumbnail">
+             <a class="fancybox" href="{{STATIC_URL}}park.jpg"><img src="{{ STATIC_URL}}park.jpg" alt="..."></a>
+              <div class="caption">
+                 <a href="#" class="btn  btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
+
+              </div>
+          </div>
+      </div>
+
+     <div class="col-sm-3 col-md-2">
+          <div id="125" class="thumbnail">
+             <a class="fancybox" href="{{STATIC_URL}}Mondrian_Comp10.jpg"><img src="{{ STATIC_URL}}Mondrian_Comp10.jpg" alt="..."></a>
+              <div class="caption">
+                 <a href="#" class="btn btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
+
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+ </section>
+
+
+  <form id="form1" enctype="multipart/form-data" method="post" action="upload">
+
+    <div class="row">
+
+    <div class="input-group">
+    <span class="input-group-addon">Titulo</span>
+    <input id="title" type="text" class="form-control"/>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Descripción</span>
+        <textarea  id="Description" class="form-control" rows="8" placeholder="Aquí la descripción"></textarea>
+    </div>
+
+    <label for="fileToUpload">Seleccione una imagen para agregar</label><br />
+    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
+
+    </div>
+    <div id="fileName"></div>
+    <div id="fileSize"></div>
+    <div id="fileType"></div>
+    <div class="row">
+      <input type="button" onclick="uploadFile()" value="Subir" />
+    </div>
+    <div id="progressNumber"></div>
+
+  </form>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
+</html>

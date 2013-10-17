@@ -11,6 +11,8 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'xyz.views.index', name='index'),
     url(r'^index.html$', 'xyz.views.index', name='index'),
+    url(r'^last_generation$', 'xyz.views.generation', name='generation'),
+    url(r'^generation/(\d*)/$', 'xyz.views.generation', name='generation'),
     url(r'^upload.html$', 'xyz.views.upload', name='upload'),
     url(r'^upload_minimal', 'xyz.views.upload_minimal', name='upload_minimal'),
 
