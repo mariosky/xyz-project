@@ -107,7 +107,7 @@ def evoart(request):
         if method == "get_paintings":
             paintings = Painting.objects.filter(generation__generation_number=int(params[0]))
 
-            result = [ (paint.id,paint.image.url)  for   paint in   paintings]
+            result = [ (paint.id,paint.image)  for   paint in   paintings]
             data = json.dumps({"result":result , "error": None, "id": id})
             print data
             return HttpResponse(data, mimetype='application/javascript')
