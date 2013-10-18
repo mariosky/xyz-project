@@ -30,7 +30,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="25" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="1710">
+            <state line="58" column="90" selection-start="1946" selection-end="1957" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1710">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="0" selection-start="6198" selection-end="6198" vertical-scroll-proportion="0.6356275" vertical-offset="2311" max-vertical-offset="4590">
+            <state line="160" column="64" selection-start="5467" selection-end="5467" vertical-scroll-proportion="0.5010395" vertical-offset="2159" max-vertical-offset="4620">
               <folding />
             </state>
           </provider>
@@ -617,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xyz/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="21" selection-start="194" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
@@ -633,14 +626,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="25" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="1710">
+        <state line="58" column="90" selection-start="1946" selection-end="1957" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="1" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="0" selection-start="6198" selection-end="6198" vertical-scroll-proportion="0.6356275" vertical-offset="2311" max-vertical-offset="4590">
+        <state line="160" column="64" selection-start="5467" selection-end="5467" vertical-scroll-proportion="0.5010395" vertical-offset="2159" max-vertical-offset="4620">
           <folding />
         </state>
       </provider>

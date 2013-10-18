@@ -156,14 +156,16 @@ return parents;
                     url: '/evoart',
                     type: "POST",
                     contentType: "application/json",
-                    data: JSON.stringify({"jsonrpc": "2.0", "method": "get_paintings", "params": [2], "id": 1 }),
+                    data: JSON.stringify({"jsonrpc": "2.0", "method": "get_paintings", "params": [{{current_gen.generation_number}} ], "id": 1 }),
                     dataType: "json",
                     success: function(data, textStatus, jqXHR) {
                         //data = jQuery.parseJSON(data);
 						var paintings =data.result;
                          for (var i=0; i<paintings.length; i++){
 
-                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
+                            // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
+                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) )
+
                              var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                                                 $('<img />', {src:paintings[i][1],alt:"title" }))
 
@@ -173,7 +175,7 @@ return parents;
 
                          }
 
-                        $(".caption>.btn").click(function (){
+                        $("#prev_generation .caption>.btn").click(function (){
                             $(this).toggleClass("btn-success");
                         });
 
