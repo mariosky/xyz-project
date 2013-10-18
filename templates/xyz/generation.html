@@ -108,16 +108,69 @@ return parents;
 
 
      <script type="text/javascript" charset="utf-8">
-
+      var paintings = "";
       $(document).ready(function() {
+
+
 
 	/* This is basic - uses default settings */
 
 		$(".fancybox").fancybox();
 
 
-        $(".caption>.btn").click(function () {
-        $(this).toggleClass("btn-success");
+        $(".caption>.btn").click(function (){
+            $(this).toggleClass("btn-success");
+        });
+
+
+
+         $.ajaxSetup({
+	     beforeSend: function(xhr, settings) {
+	         function getCookie(name) {
+	             var cookieValue = null;
+	             if (document.cookie && document.cookie != '') {
+	                 var cookies = document.cookie.split(';');
+	                 for (var i = 0; i < cookies.length; i++) {
+	                     var cookie = jQuery.trim(cookies[i]);
+	                     // Does this cookie string begin with the name we want?
+	                 if (cookie.substring(0, name.length + 1) == (name + '=')) {
+	                     cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+	                     break;
+	                 }
+	             }
+	         }
+	         return cookieValue;
+	         }
+	         if (!(/^http:.*/.test(settings.url) || /^https:.*/.test(settings.url))) {
+	             // Only send the token to relative URLs i.e. locally.
+	             xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+	         }
+	     }
+
+         });
+
+        function getCollection(){
+
+                $.ajax(
+                {
+                    url: '/evoart',
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({"jsonrpc": "2.0", "method": "get_paintings", "params": [2], "id": 1 }),
+                    dataType: "json",
+                    success: function(data, textStatus, jqXHR) {
+                        //data = jQuery.parseJSON(data);
+						paintings =data.result;
+                     },
+                    error: function(jqXHR, textStatus, errorThrown)  {
+                        alert ("Error:" + textStatus+" "+errorThrown+" "+jqXHR.responseText);}
+                });
+        };
+
+
+        getCollection();
+
+
 
     });
 
@@ -126,7 +179,7 @@ return parents;
 
 
 
-});
+
 </script>
 
   </head>
