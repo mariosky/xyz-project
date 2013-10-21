@@ -120,7 +120,21 @@ return parents;
 
         $(".caption>.btn").click(function (){
             $(this).toggleClass("btn-success");
+
+          if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
+          {
+            $("#add-image")[0].enable();
+            $("#add-image")[0].value="Agrega nueva pintura";
+          }
+          else
+          {
+             $("#add-image")[0].disable();
+             $("#add-image").value="Selecciona uno o dos padres";
+          }
+
         });
+
+
 
 
 
@@ -225,8 +239,16 @@ return parents;
     </div>
 
     <div class="container">
+ <div class="row">
+     <div class="col-sm-3 col-md-6">  <h3 id="btn-groups-single"> {{current_gen.generation_name}}</h3> </div>
+     <div class="col-sm-4 col-md-6">
+         <button id="add-image" type="button" class="btn btn-primary">
+            Agregar a la siguiente generación...
+        </button>
+     </div>
+  </div>
 
-    <h3 id="btn-groups-single"> {{current_gen.generation_name}}</h3>
+
     <div class="btn-toolbar" style="margin: 0;">
         <div class="btn-group" class="btn btn-default">1</div>
         <div class="btn-group" class="btn btn-default">2</div>

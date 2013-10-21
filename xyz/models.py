@@ -17,10 +17,10 @@ class Generation(models.Model):
 
 
 class Painting(models.Model):
-    title = models.CharField(max_length=128)
-    author = models.ForeignKey(User, null=True)
+    title = models.CharField(max_length=128, null=True)
+    author = models.ForeignKey(User, null=False)
     published = models.DateTimeField(auto_now=True)
-    summary = models.TextField(blank=True)
+    summary = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='paintings', blank=True)
     generation = models.ForeignKey(Generation, null=True)
     parents = models.ManyToManyField("self",blank=True, null=True)

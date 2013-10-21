@@ -17,3 +17,9 @@ a.thumbnail   {
   height: auto;
   max-width: 100%;
 }
+
+
+#add-image
+{
+    margin-top: 15px;
+}
