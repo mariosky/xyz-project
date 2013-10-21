@@ -226,7 +226,7 @@ return parents;
 
     <div class="container">
 
-    <h3 id="btn-groups-single">Generaciones</h3>
+    <h3 id="btn-groups-single"> {{current_gen.generation_name}}</h3>
     <div class="btn-toolbar" style="margin: 0;">
         <div class="btn-group" class="btn btn-default">1</div>
         <div class="btn-group" class="btn btn-default">2</div>
@@ -236,13 +236,14 @@ return parents;
 
 
 <section>
-<div id="prev_generation" class="row">
+  <div id="prev_generation" class="row">
 
 
 
   </div>
- <div class="row">
+{%  comment %}
 
+ <div class="row">
      {% for painting in paintings %}
       <div class="col-sm-3 col-md-2">
           <div id="{{ painting.id }}" class="thumbnail">
@@ -260,6 +261,8 @@ return parents;
 
 
   </div>
+{%  endcomment %}
+
  </section>
 
 
