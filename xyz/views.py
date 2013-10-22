@@ -86,13 +86,10 @@ def upload_minimal(request):
             for _id in request.POST[u'parents'].split(','):
                 painting.parents.add(Painting.objects.get(pk=_id))
 
-            print painting.parents.all()
 
-            #json_data = json.loads(request.body)
-
-            #id     = json_data["id"]
-            data = json.dumps({"result" : "saved","error": None, "id": 12})
-            return HttpResponse(data, mimetype='application/json')
+            result = [(painting.id, painting.image.url.split("?")[0])]
+            data = json.dumps({"result":result , "error": None, "id": id})
+            return HttpResponse(data, mimetype='application/javascript')
     else:
         data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": id}))
         return HttpResponse(data, mimetype='application/json')
@@ -109,7 +106,6 @@ def evoart(request):
 
             result = [(paint.id, paint.image.url.split("?")[0]) for paint in paintings]
             data = json.dumps({"result":result , "error": None, "id": id})
-            print data
             return HttpResponse(data, mimetype='application/javascript')
 
     else:
