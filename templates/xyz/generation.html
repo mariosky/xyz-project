@@ -123,13 +123,13 @@ return parents;
 
           if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
           {
-            $("#add-image")[0].enable();
-            $("#add-image")[0].value="Agrega nueva pintura";
+            $("#add-image").attr("disabled", "disabled");
+            $("#add-image").text("Agrega nueva pintura");
           }
           else
           {
-             $("#add-image")[0].disable();
-             $("#add-image").value="Selecciona uno o dos padres";
+             $("#add-image").removeAttr("disabled");
+             $("#add-image").text("Selecciona uno o dos padres");
           }
 
         });
