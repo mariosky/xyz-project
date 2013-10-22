@@ -88,10 +88,10 @@ def upload_minimal(request):
 
 
             result = [(painting.id, painting.image.url.split("?")[0])]
-            data = json.dumps({"result":result , "error": None, "id": id})
+            data = json.dumps({"result":result , "error": None, "id": "upload_minimal"})
             return HttpResponse(data, mimetype='application/javascript')
     else:
-        data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": id}))
+        data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": "upload_minimal"}))
         return HttpResponse(data, mimetype='application/json')
 
 
