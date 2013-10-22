@@ -124,9 +124,8 @@ return parents;
         $(".caption>.btn").click(function (){
                 $(this).toggleClass("btn-success");
 
-             alert("$(this).toggleClass("btn-success");");
+             alert("toggleClass");
 
-            alert("$(this).toggleClass("btn-success");");
 
 
         if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
@@ -138,6 +137,7 @@ return parents;
         }
         else
         {
+            alert("NO");
         $("#add-image").attr("disabled", "disabled");
         $("#add-image").text("Selecciona uno o dos padres");
         }
