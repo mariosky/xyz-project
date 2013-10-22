@@ -119,22 +119,22 @@ return parents;
 
 
         $(".caption>.btn").click(function (){
-
-
-          if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
-          {
-            $("#add-image").removeAttr("disabled");
-            $("#add-image").text("Agrega nueva pintura");
-          }
-          else
-          {
-             $("#add-image").attr("disabled", "disabled");
-             $("#add-image").text("Selecciona uno o dos padres");
-          }
-
-           $(this).toggleClass("btn-success");
+                $(this).toggleClass("btn-success");
         });
 
+        $(".caption>.btn").click(function (){
+
+        if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
+        {
+        $("#add-image").removeAttr("disabled");
+        $("#add-image").text("Agrega nueva pintura");
+        }
+        else
+        {
+        $("#add-image").attr("disabled", "disabled");
+        $("#add-image").text("Selecciona uno o dos padres");
+        }
+       });
 
 
 
