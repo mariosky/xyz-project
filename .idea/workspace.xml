@@ -66,7 +66,7 @@
       <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="29" selection-start="7478" selection-end="7479" vertical-scroll-proportion="0.43485087" vertical-offset="3008" max-vertical-offset="5850">
+            <state line="78" column="5" selection-start="3182" selection-end="3182" vertical-scroll-proportion="-1.2135007" vertical-offset="1943" max-vertical-offset="5850">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -111,7 +111,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
+    <option name="x" value="-5" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -522,7 +522,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="22" width="1440" height="822" extended-state="0" />
+    <frame x="-5" y="22" width="1440" height="822" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -686,7 +686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="29" selection-start="7478" selection-end="7479" vertical-scroll-proportion="0.43485087" vertical-offset="3008" max-vertical-offset="5850">
+        <state line="78" column="5" selection-start="3182" selection-end="3182" vertical-scroll-proportion="-1.2135007" vertical-offset="1943" max-vertical-offset="5850">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

@@ -81,7 +81,7 @@
 function uploadComplete(evt) {
   alert(evt.target.responseText);
 
-  var paintings = this.result;
+  var paintings = this.response.result;
 
      alert(paintings[0]);
   for (var i=0; i<paintings.length; i++){
@@ -210,7 +210,7 @@ return parents;
                     dataType: "json",
                     success: function(data, textStatus, jqXHR) {
                         //data = jQuery.parseJSON(data);
-						var paintings =data.response.result;
+						var paintings =data.result;
                          for (var i=0; i<paintings.length; i++){
 
                             // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
