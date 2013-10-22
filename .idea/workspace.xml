@@ -4,6 +4,7 @@
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/generation.html" afterPath="$PROJECT_DIR$/templates/xyz/generation.html" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="34" selection-start="3123" selection-end="3123" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
+            <state line="83" column="30" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -62,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generation.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="22" selection-start="3328" selection-end="3328" vertical-scroll-proportion="-10.916667" vertical-offset="1028" max-vertical-offset="5850">
+            <state line="80" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.31711146" vertical-offset="998" max-vertical-offset="5850">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -104,8 +105,8 @@
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
         <option value="$PROJECT_DIR$/xyz/models.py" />
         <option value="$PROJECT_DIR$/xyz/static/css/starter-template.css" />
-        <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
         <option value="$PROJECT_DIR$/xyz/views.py" />
+        <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
       </list>
     </option>
   </component>
@@ -676,19 +677,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
+    <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="22" selection-start="3328" selection-end="3328" vertical-scroll-proportion="-10.916667" vertical-offset="1028" max-vertical-offset="5850">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="83" column="30" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1650">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyz/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="34" selection-start="3123" selection-end="3123" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
-          <folding />
+        <state line="80" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.31711146" vertical-offset="998" max-vertical-offset="5850">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
