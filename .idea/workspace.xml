@@ -66,7 +66,7 @@
       <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.31711146" vertical-offset="998" max-vertical-offset="5850">
+            <state line="219" column="29" selection-start="7478" selection-end="7479" vertical-scroll-proportion="0.43485087" vertical-offset="3008" max-vertical-offset="5850">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -686,7 +686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.31711146" vertical-offset="998" max-vertical-offset="5850">
+        <state line="219" column="29" selection-start="7478" selection-end="7479" vertical-scroll-proportion="0.43485087" vertical-offset="3008" max-vertical-offset="5850">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
