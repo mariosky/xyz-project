@@ -4,7 +4,6 @@
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="69" selection-start="3158" selection-end="3158" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
+            <state line="89" column="34" selection-start="3123" selection-end="3123" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -688,7 +687,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="69" selection-start="3158" selection-end="3158" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
+        <state line="89" column="34" selection-start="3123" selection-end="3123" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
