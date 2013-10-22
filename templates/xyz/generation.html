@@ -82,6 +82,8 @@ function uploadComplete(evt) {
   alert(evt.target.responseText);
 
   var paintings =evt.result;
+
+     alert(paintings[0]);
   for (var i=0; i<paintings.length; i++){
 
        // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
