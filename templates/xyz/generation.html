@@ -208,6 +208,20 @@ return parents;
 
                         $("#prev_generation .caption>.btn").click(function (){
                             $(this).toggleClass("btn-success");
+                             if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
+                            {
+                            alert("SI");
+
+                            $("#add-image").removeAttr("disabled");
+                            $("#add-image").text("Agrega nueva pintura");
+                            }
+                            else
+                            {
+                                alert("NO");
+                            $("#add-image").attr("disabled", "disabled");
+                            $("#add-image").text("Selecciona uno o dos padres");
+                            }
+                            
                         });
 
                      },
