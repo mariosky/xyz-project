@@ -121,7 +121,10 @@ return parents;
         $("#add-image").text("Selecciona uno o dos padres");
 
 
-        $(".caption>.btn").click(function (){
+        $(".caption>.btn").on("click", function (){
+
+             alert("toggleClass");
+
                 $(this).toggleClass("btn-success");
 
              alert("toggleClass");
