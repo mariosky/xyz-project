@@ -79,6 +79,7 @@
     }
 
 function uploadComplete(evt) {
+  alert(evt.target.responseText);
 
   var paintings =evt.result;
   for (var i=0; i<paintings.length; i++){
