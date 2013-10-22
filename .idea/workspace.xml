@@ -4,7 +4,6 @@
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/generation.html" afterPath="$PROJECT_DIR$/templates/xyz/generation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
     </list>
     <ignored path="XYZ.iws" />
@@ -31,7 +30,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="9" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.37833828" vertical-offset="825" max-vertical-offset="1650">
+            <state line="89" column="69" selection-start="3158" selection-end="3158" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -112,7 +111,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="436" />
+    <option name="x" value="61" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -523,7 +522,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="436" y="22" width="1440" height="822" extended-state="0" />
+    <frame x="61" y="22" width="1440" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -689,7 +688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="9" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.37833828" vertical-offset="825" max-vertical-offset="1650">
+        <state line="89" column="69" selection-start="3158" selection-end="3158" vertical-scroll-proportion="0.57863504" vertical-offset="735" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
