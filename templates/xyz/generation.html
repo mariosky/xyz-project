@@ -119,19 +119,20 @@ return parents;
 
 
         $(".caption>.btn").click(function (){
-            $(this).toggleClass("btn-success");
+
 
           if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
           {
-            $("#add-image").attr("disabled", "disabled");
+            $("#add-image").removeAttr("disabled");
             $("#add-image").text("Agrega nueva pintura");
           }
           else
           {
-             $("#add-image").removeAttr("disabled");
+             $("#add-image").attr("disabled", "disabled");
              $("#add-image").text("Selecciona uno o dos padres");
           }
 
+           $(this).toggleClass("btn-success");
         });
 
 
