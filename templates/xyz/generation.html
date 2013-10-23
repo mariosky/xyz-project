@@ -64,7 +64,6 @@
   xhr.addEventListener("error", uploadFailed, false);
   xhr.addEventListener("abort", uploadCanceled, false);
   /* Be sure to change the url below to the url of your upload server side script */
-  xhr.responseType ="json";
   xhr.open("POST", "upload_minimal");
 
   xhr.send(fd);
@@ -82,9 +81,11 @@
 
 function uploadComplete(evt) {
   alert(evt.target.responseText);
+    this.responseType ="json";
 
   var paintings = this.response;
-     alert(paintings[0]);
+  var test = JSON.parse(this.response) ;
+    alert(paintings[0]);
 
 
   for (var i=0; i<paintings.length; i++){
