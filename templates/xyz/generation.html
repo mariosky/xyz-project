@@ -79,13 +79,11 @@
     }
 
 function uploadComplete(evt) {
-  alert(evt.target.responseText);
 
 
-  var paintings = this.response;
-  var test = JSON.parse(this.response) ;
-    alert(paintings[0]);
 
+  var response = JSON.parse(this.response) ;
+  var paintings = response.result;
 
   for (var i=0; i<paintings.length; i++){
 
