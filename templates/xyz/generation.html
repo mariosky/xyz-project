@@ -64,7 +64,7 @@
   xhr.addEventListener("error", uploadFailed, false);
   xhr.addEventListener("abort", uploadCanceled, false);
   /* Be sure to change the url below to the url of your upload server side script */
-  xhr.responseType ="json"
+  xhr.responseType ="json";
   xhr.open("POST", "upload_minimal");
 
   xhr.send(fd);
