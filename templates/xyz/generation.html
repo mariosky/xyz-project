@@ -16,7 +16,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}fancybox/jquery.fancybox-1.3.4.css" media="screen" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="{{ STATIC_URL}}assets/js/html5shiv.js"></script>
@@ -90,10 +89,8 @@ function uploadComplete(evt) {
 
   for (var i=0; i<paintings.length; i++){
 
-        var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
-        var $edit =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
-
-        var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
+       // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
+        var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) )
 
         var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                            $('<img />', {src:paintings[i][1],alt:"title" }))
@@ -102,18 +99,10 @@ function uploadComplete(evt) {
         $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#next_generation")
 
 
-         $("#title")[0].value="";
-         $("#Description")[0].value="";
-         $("#fileName")[0].value="";
-         $("#fileSize")[0].value="";
-         $("#fileType")[0].value="";
-         $("#progressNumber")[0].value="";
-         $( "#dialog-form" ).dialog( "close" );
-
     }
 
   /* This event is raised when the server send back a response */
-
+  alert(evt.target.responseText);
 }
 
 function uploadFailed(evt) {
@@ -148,7 +137,7 @@ return parents;
 
            $( "#dialog-form" ).dialog({
                 autoOpen: false,
-                height: 450,
+                height: 400,
                 width: 550,
                 modal: true,
                 buttons: {},
@@ -171,9 +160,41 @@ return parents;
         $("#add-image").attr("disabled", "disabled");
         $("#add-image").text("Selecciona uno o dos padres");
 
+
+        $(".caption>.btn").on("click", function (){
+
+             alert("toggleClass");
+
+                $(this).toggleClass("btn-success");
+
+             alert("toggleClass");
+
+
+
+        if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
+        {
+           alert("SI");
+
+        $("#add-image").removeAttr("disabled");
+        $("#add-image").text("Agrega nueva pintura");
+        }
+        else
+        {
+            alert("NO");
+        $("#add-image").attr("disabled", "disabled");
+        $("#add-image").text("Selecciona uno o dos padres");
+        }
+
+
+
+
+        });
+
+
+
         $("#add-image").on("click", function (){
 
-            $( "#dialog-form" ).dialog( "open" );
+            $( "#dialog-form" ).dialog( "open" )
 
 
         });
@@ -220,13 +241,13 @@ return parents;
                          for (var i=0; i<paintings.length; i++){
 
                             // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
-                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) );
+                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) )
 
                              var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
-                                                $('<img />', {src:paintings[i][1],alt:"title" }));
+                                                $('<img />', {src:paintings[i][1],alt:"title" }))
 
-                             var $thumbnail =  $('<div />',{class:"thumbnail",id:paintings[i][0] }).append($fanzy, $caption);
-                             $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#prev_generation");
+                             var $thumbnail =  $('<div />',{class:"thumbnail",id:paintings[i][0] }).append($fanzy, $caption)
+                             $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#prev_generation")
 
 
                          }
@@ -269,19 +290,14 @@ return parents;
 						var paintings =data.result;
                          for (var i=0; i<paintings.length; i++){
 
-                             var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
-                             var $edit =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
-
-                             var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
-
+                            // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
+                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) )
 
                              var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
-                                                $('<img />', {src:paintings[i][1],alt:"title" }));
+                                                $('<img />', {src:paintings[i][1],alt:"title" }))
 
-
-                             var $thumbnail =  $('<div />',{class:"thumbnail",id:paintings[i][0] }).append($fanzy, $caption);
-
-                             $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#next_generation");
+                             var $thumbnail =  $('<div />',{class:"thumbnail",id:paintings[i][0] }).append($fanzy, $caption)
+                             $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#next_generation")
 
 
                          }
@@ -319,7 +335,6 @@ return parents;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-
           </button>
           <a class="navbar-brand" href="#">XYZ Project</a>
         </div>
@@ -334,8 +349,7 @@ return parents;
     </div>
 
     <div class="container">
-
-  <div class="row">
+ <div class="row">
      <div class="col-sm-3 col-md-6">  <h3 id="btn-groups-single"> {{current_gen.generation_name}}</h3> </div>
      <div class="col-sm-4 col-md-6">
          <button id="add-image" type="button"  class="btn">
