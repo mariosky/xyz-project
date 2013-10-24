@@ -90,8 +90,10 @@ function uploadComplete(evt) {
 
   for (var i=0; i<paintings.length; i++){
 
-       // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
-        var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) )
+        var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
+        var $edit =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
+
+        var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
 
         var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                            $('<img />', {src:paintings[i][1],alt:"title" }))
@@ -169,38 +171,6 @@ return parents;
         $("#add-image").attr("disabled", "disabled");
         $("#add-image").text("Selecciona uno o dos padres");
 
-
-        $(".caption>.btn").on("click", function (){
-
-             alert("toggleClass");
-
-                $(this).toggleClass("btn-success");
-
-             alert("toggleClass");
-
-
-
-        if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
-        {
-           alert("SI");
-
-        $("#add-image").removeAttr("disabled");
-        $("#add-image").text("Agrega nueva pintura");
-        }
-        else
-        {
-            alert("NO");
-        $("#add-image").attr("disabled", "disabled");
-        $("#add-image").text("Selecciona uno o dos padres");
-        }
-
-
-
-
-        });
-
-
-
         $("#add-image").on("click", function (){
 
             $( "#dialog-form" ).dialog( "open" );
@@ -249,10 +219,8 @@ return parents;
 						var paintings =data.result;
                          for (var i=0; i<paintings.length; i++){
 
-                             var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
-                             var $edit =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
-
-                             var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
+                            // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
+                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) );
 
                              var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                                                 $('<img />', {src:paintings[i][1],alt:"title" }));
