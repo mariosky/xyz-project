@@ -9,7 +9,7 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL}}css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{{ STATIC_URL}}css/starter-template.css" rel="stylesheet">
@@ -334,7 +334,8 @@ return parents;
     </div>
 
     <div class="container">
- <div class="row">
+
+  <div class="row">
      <div class="col-sm-3 col-md-6">  <h3 id="btn-groups-single"> {{current_gen.generation_name}}</h3> </div>
      <div class="col-sm-4 col-md-6">
          <button id="add-image" type="button"  class="btn">
