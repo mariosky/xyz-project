@@ -66,7 +66,7 @@
       <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="0" selection-start="4769" selection-end="4769" vertical-scroll-proportion="0.38860103" vertical-offset="1710" max-vertical-offset="6720">
+            <state line="196" column="48" selection-start="6071" selection-end="6071" vertical-scroll-proportion="0.4753886" vertical-offset="2573" max-vertical-offset="6810">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -541,7 +541,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1178" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1178" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -705,7 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="4769" selection-end="4769" vertical-scroll-proportion="0.38860103" vertical-offset="1710" max-vertical-offset="6720">
+        <state line="196" column="48" selection-start="6071" selection-end="6071" vertical-scroll-proportion="0.4753886" vertical-offset="2573" max-vertical-offset="6810">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
