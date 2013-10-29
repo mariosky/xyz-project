@@ -221,8 +221,8 @@ return parents;
         });
 
         $("#next_generation").on("click","a.edit"  , function (){
-            $("#title_update")[0].value=$(this).title;
-            $("#description_update")[0].value=$(this).summary;
+            $("#title_update")[0].value=$(this).data('title',paintings[i][2]);
+            $("#description_update")[0].value=$(this).data('summary',paintings[i][3]);
             $( "#update-form" ).dialog( "open" );
 
 
@@ -323,8 +323,8 @@ return parents;
 
                              var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
                              var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
-                             $edit.title = paintings[i][2];
-                             $edit.summary = paintings[i][3];
+                             $edit.data('title',paintings[i][2]);
+                             $edit.data('summary', paintings[i][3]);
 
 
                              var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
