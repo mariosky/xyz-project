@@ -4,7 +4,6 @@
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/gen_view.html" afterPath="$PROJECT_DIR$/templates/xyz/gen_view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/generation.html" afterPath="$PROJECT_DIR$/templates/xyz/generation.html" />
     </list>
     <ignored path="XYZ.iws" />
@@ -67,7 +66,7 @@
       <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="42" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.2642405" vertical-offset="688" max-vertical-offset="7650">
+            <state line="222" column="43" selection-start="7108" selection-end="7108" vertical-scroll-proportion="0.6677215" vertical-offset="2908" max-vertical-offset="7755">
               <folding />
             </state>
           </provider>
@@ -647,7 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="42" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.2642405" vertical-offset="688" max-vertical-offset="7650">
+        <state line="222" column="43" selection-start="7108" selection-end="7108" vertical-scroll-proportion="0.6677215" vertical-offset="2908" max-vertical-offset="7755">
           <folding />
         </state>
       </provider>
