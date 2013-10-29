@@ -49,10 +49,12 @@ def index(request):
 
 def generation(request,gen=0):
     if request.user.is_authenticated():
+        print "gen", gen
         # Trae la ultima generacion
         next_gen = Generation.objects.filter(next_generation=True)[0]
+        print next_gen.generation_number,gen < next_gen.generation_number, gen != 0
         # Si no se especifica la gen, significa que es la ultima y vamos a agregar nuevas pinturas
-        if gen != 0 and (gen < next_gen.generation_number)  :
+        if gen != 0 and (gen < next_gen.generation_number):
             old_gen = Generation.objects.filter(generation_number=gen)[0]
             return render_to_response('xyz/gen_view.html',{'next_gen':next_gen,
                                 "current_gen":next_gen.generation_number-1, "paintings":old_gen},
