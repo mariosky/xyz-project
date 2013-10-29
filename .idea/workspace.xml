@@ -57,7 +57,7 @@
       <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="0" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.23688394" vertical-offset="1741" max-vertical-offset="8190">
+            <state line="133" column="8" selection-start="4934" selection-end="4934" vertical-scroll-proportion="0.5707472" vertical-offset="1636" max-vertical-offset="8235">
               <folding />
             </state>
           </provider>
@@ -101,7 +101,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
+    <option name="x" value="16" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="814" />
@@ -508,7 +508,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1440" height="814" extended-state="0" />
+    <frame x="16" y="22" width="1440" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -665,7 +665,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.23688394" vertical-offset="1741" max-vertical-offset="8190">
+        <state line="133" column="8" selection-start="4934" selection-end="4934" vertical-scroll-proportion="0.5707472" vertical-offset="1636" max-vertical-offset="8235">
           <folding />
         </state>
       </provider>
