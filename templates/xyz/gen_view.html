@@ -110,7 +110,7 @@
 
   </div>
 
-    <h3 id="btn-groups-single"> Aportación de {{user.username}} para la siguiente generación: </h3>
+    <h3 id="btn-groups-single"> Pinturas de la antigua generación:  </h3>
 
    <div id="next_generation" class="row">
 
@@ -126,11 +126,12 @@
               <a class="fancybox" href="{{STATIC_URL}}{{ painting.image }}">
                 <img src="{{ STATIC_URL}}{{ painting.image }}" alt="{{ painting.title }}">
               </a>
-
+{% comment %}
               <div class="caption">
                      <a href="#" class="btn btn-sm"><span class="glyphicon glyphicon-heart"> </span> </a>
               </div>
           </div>
+{% endcomment %}
       </div>
      {% endfor %}
 
