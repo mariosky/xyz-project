@@ -339,7 +339,7 @@ return parents;
      <div class="col-sm-3 col-md-6">
          <div class="btn-group">
             {% for gen in past_gens %}
-                 <a href="/generation/{{gen.generation_number}}">  <button type="button" class="btn btn-default">  {{ gen.generation_number }}   </button></a>
+                   <button type="button" class="btn btn-default"> <a href="/generation/{{gen.generation_number}}"> {{ gen.generation_number }} </a>  </button>
             {% endfor %}
         </div>
      </div>
