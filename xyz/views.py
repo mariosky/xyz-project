@@ -107,6 +107,26 @@ def upload_minimal(request):
         data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": "upload_minimal"}))
         return HttpResponse(data, mimetype='application/json')
 
+@csrf_exempt
+def update_paint(request):
+    if request.method == 'POST':
+            print request.POST[u'parents']
+
+
+
+            painting = Painting.objects.get(pk=int(request.POST[u'id']))
+            painting.title = request.POST[u'title']
+            painting.summary = request.POST[u'summary']
+
+            painting.save()
+            data = json.dumps({"result":None , "error": None, "id": "upload_minimal"})
+            return HttpResponse(data, mimetype='application/json')
+    else:
+        data = json.dumps(data = json.dumps({"result" : "saved","error": None, "id": "upload_minimal"}))
+        return HttpResponse(data, mimetype='application/json')
+
+
+
 
 def evoart(request):
     if  request.method == 'POST':

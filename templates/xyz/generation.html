@@ -58,12 +58,15 @@
   var fd = new FormData(document.getElementById('form1')) ;
   fd.append("title",document.getElementById("title_update").value);
   fd.append("summary",document.getElementById("description_update").value);
-
+  fd.append("id",$( "#update-form").data("id"));
   xhr.addEventListener("load", updateComplete, false);
   xhr.addEventListener("error", uploadFailed, false);
   xhr.open("POST", "update_paint");
   xhr.send(fd);
        }
+
+
+
 
      function uploadProgress(evt) {
             if (evt.lengthComputable) {
@@ -223,6 +226,7 @@ return parents;
         $("#next_generation").on("click","a.edit"  , function (){
             $("#title_update")[0].value=$(this).data('title');
             $("#description_update")[0].value=$(this).data('summary');
+            $( "#update-form").data("id",$(this).data('id'));
             $( "#update-form" ).dialog( "open" );
 
 
@@ -322,9 +326,10 @@ return parents;
 
 
                              var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
-                             var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
+                             var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" ,id:paintings[i][0] }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
                              $edit.data('title',paintings[i][2]);
                              $edit.data('summary', paintings[i][3]);
+                             $edit.data('id', paintings[i][0]);
 
 
                              var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
