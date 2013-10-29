@@ -51,6 +51,34 @@
         }
      }
 
+
+
+       function updateFile() {
+  var xhr = new XMLHttpRequest();
+  var fd = new FormData(document.getElementById('form1')) ;
+  fd.append("title",document.getElementById("title_update").value);
+  fd.append("summary",document.getElementById("description_update").value);
+
+  xhr.addEventListener("load", updateComplete, false);
+  xhr.addEventListener("error", uploadFailed, false);
+  xhr.open("POST", "update_paint");
+  xhr.send(fd);
+       }
+
+     function uploadProgress(evt) {
+            if (evt.lengthComputable) {
+       var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+            document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+             }
+            else {
+            document.getElementById('progressNumber').innerHTML = 'imposible calcular';
+            }
+    }
+
+
+
+
+
      function uploadFile() {
   var xhr = new XMLHttpRequest();
   var fd = new FormData(document.getElementById('form1')) ;
@@ -159,8 +187,22 @@ return parents;
                 Close: function() {
                 $( this ).dialog( "close" );
                 }
-});
+            });
 
+          $( "#update-form" ).dialog({
+                autoOpen: false,
+                height: 450,
+                width: 550,
+                modal: true,
+                buttons: {},
+                Cancel: function() {
+                $( this ).dialog( "close" );
+                }
+                ,
+                Close: function() {
+                $( this ).dialog( "close" );
+                }
+            });
 
 
 
@@ -426,6 +468,28 @@ return parents;
   </form>
 
  </div>
+
+
+  <div id="update-form" title="Edición de Pintura">
+  <form id="form2" enctype="multipart/form-data" method="post" action="update_paint">
+
+   <div class="input-group">
+    <span class="input-group-addon">Titulo</span>
+    <input id="title" type="text" class="form-control"/>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Descripción</span>
+        <textarea  id="Description" class="form-control" rows="8" placeholder="Aquí la descripción"></textarea>
+    </div>
+
+    <div class="row">
+      <input type="button" onclick="updateFile()" value="Guardar" />
+    </div>
+
+  </form>
+
+ </div>
+
 
     </div><!-- /.container -->
 
