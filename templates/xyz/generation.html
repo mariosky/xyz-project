@@ -128,10 +128,11 @@ function uploadComplete(evt) {
   for (var i=0; i<paintings.length; i++){
 
         var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
-        var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
+        var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" , id:paintings[i][0]}).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
         $edit.data('title',paintings[i][2]);
         $edit.data('summary', paintings[i][3]);
         $edit.data('id', paintings[i][0]);
+
         var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
 
         var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
