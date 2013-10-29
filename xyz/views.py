@@ -100,7 +100,7 @@ def upload_minimal(request):
                 painting.parents.add(Painting.objects.get(pk=_id))
 
 
-            result = [(painting.id, painting.image.url.split("?")[0] )]
+            result = [(painting.id, painting.image.url.split("?")[0], painting.title, painting.summary )]
             data = json.dumps({"result":result , "error": None, "id": "upload_minimal"})
             return HttpResponse(data, mimetype='application/json')
     else:
