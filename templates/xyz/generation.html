@@ -183,6 +183,26 @@ return parents;
 
      <script type="text/javascript" charset="utf-8">
 
+       function delete_painting(painting_id)
+        {
+              $.ajax(
+                {
+                    url: '/evoart',
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({"jsonrpc": "2.0", "method": "delete_painting", "params": [painting_id], "id": 1 }),
+                    dataType: "json",
+                    success: function(data, textStatus, jqXHR) {
+
+                        getCollectionUser();
+                     },
+                    error: function(jqXHR, textStatus, errorThrown)  {
+                        alert ("Error:" + textStatus+" "+errorThrown+" "+jqXHR.responseText);}
+                });
+
+
+        }
+
       function getCollectionUser(){
 
                 $.ajax(
@@ -328,25 +348,7 @@ return parents;
          });
 
 
-        function delete_painting(painting_id)
-        {
-              $.ajax(
-                {
-                    url: '/evoart',
-                    type: "POST",
-                    contentType: "application/json",
-                    data: JSON.stringify({"jsonrpc": "2.0", "method": "delete_painting", "params": [painting_id], "id": 1 }),
-                    dataType: "json",
-                    success: function(data, textStatus, jqXHR) {
 
-                        getCollectionUser();
-                     },
-                    error: function(jqXHR, textStatus, errorThrown)  {
-                        alert ("Error:" + textStatus+" "+errorThrown+" "+jqXHR.responseText);}
-                });
-
-
-        }
 
 
 
