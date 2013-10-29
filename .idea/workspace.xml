@@ -5,6 +5,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/generation.html" afterPath="$PROJECT_DIR$/templates/xyz/generation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz_project/urls.py" afterPath="$PROJECT_DIR$/xyz_project/urls.py" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,16 +31,16 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="40" selection-start="4588" selection-end="4588" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="2235">
+            <state line="106" column="14" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="2235">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="19" column="70" selection-start="733" selection-end="733" vertical-scroll-proportion="0.42792794" vertical-offset="0" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
@@ -54,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="generation.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="7" selection-start="2793" selection-end="2793" vertical-scroll-proportion="0.5246423" vertical-offset="720" max-vertical-offset="8010">
+            <state line="200" column="27" selection-start="6579" selection-end="6579" vertical-scroll-proportion="-12.5" vertical-offset="2700" max-vertical-offset="8010">
               <folding />
             </state>
           </provider>
@@ -91,17 +92,17 @@
         <option value="$PROJECT_DIR$/xyz/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/templates/xyz/upload.html" />
         <option value="$PROJECT_DIR$/templates/xyz/index.html" />
-        <option value="$PROJECT_DIR$/xyz_project/urls.py" />
         <option value="$PROJECT_DIR$/xyz/models.py" />
         <option value="$PROJECT_DIR$/xyz/static/css/starter-template.css" />
         <option value="$PROJECT_DIR$/templates/xyz/gen_view.html" />
         <option value="$PROJECT_DIR$/xyz/views.py" />
         <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
+        <option value="$PROJECT_DIR$/xyz_project/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+    <option name="x" value="68" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="814" />
@@ -148,6 +149,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="XYZ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XYZ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XYZ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xyz_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XYZ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XYZ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xyz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,7 +509,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="22" width="1440" height="814" extended-state="6" />
+    <frame x="68" y="22" width="1440" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -489,7 +518,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10760402" sideWeight="0.6241033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22525108" sideWeight="0.6241033" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23850575" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -621,23 +650,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="200" column="27" selection-start="6579" selection-end="6579" vertical-scroll-proportion="-12.5" vertical-offset="2700" max-vertical-offset="8010">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="40" selection-start="4588" selection-end="4588" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="2235">
+        <state line="106" column="14" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.0" vertical-offset="1108" max-vertical-offset="2235">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
+    <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="7" selection-start="2793" selection-end="2793" vertical-scroll-proportion="0.5246423" vertical-offset="720" max-vertical-offset="8010">
+        <state line="19" column="70" selection-start="733" selection-end="733" vertical-scroll-proportion="0.42792794" vertical-offset="0" max-vertical-offset="666">
           <folding />
         </state>
       </provider>

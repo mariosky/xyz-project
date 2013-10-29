@@ -16,6 +16,9 @@ urlpatterns = patterns('',
     url(r'^upload.html$', 'xyz.views.upload', name='upload'),
     url(r'^upload_minimal', 'xyz.views.upload_minimal', name='upload_minimal'),
     url(r'^evoart', 'xyz.views.evoart', name='evoart'),
+
+    url(r'^update_paint', 'xyz.views.update_paint', name='update_paint'),
+
     # url(r'^xyz_project/', include('xyz_project.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
