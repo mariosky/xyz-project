@@ -253,12 +253,7 @@ return parents;
 
                             });
 
-                     $("#next_generation").on("click","a.delete"  , function (){
 
-                          delete_painting( $(this).data('id'));
-
-
-                     });
 
                      },
                     error: function(jqXHR, textStatus, errorThrown)  {
@@ -327,7 +322,12 @@ return parents;
 
         });
 
+        $("#next_generation").on("click","a.delete"  , function (){
 
+                          delete_painting( $(this).data('id'));
+
+
+                     });
 
          $.ajaxSetup({
 	     beforeSend: function(xhr, settings) {
