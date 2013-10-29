@@ -127,7 +127,7 @@ function uploadComplete(evt) {
 
   for (var i=0; i<paintings.length; i++){
 
-        var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
+        var $thrash =  $('<a />',{class:"btn btn-sm delete",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
         var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" , id:paintings[i][0]}).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
         $edit.data('title',paintings[i][2]);
         $edit.data('summary', paintings[i][3]);
@@ -200,7 +200,7 @@ return parents;
 
 
 
-                             var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
+                             var $thrash =  $('<a />',{class:"btn btn-sm delete",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
                              var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" ,id:paintings[i][0] }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
                              $edit.data('title',paintings[i][2]);
                              $edit.data('summary', paintings[i][3]);
@@ -220,15 +220,18 @@ return parents;
 
                              $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#next_generation");
                           }
+
                      $("#next_generation").on("click","a.edit"  , function (){
                             $("#title_update")[0].value=$(this).data('title');
                             $("#description_update")[0].value=$(this).data('summary');
                             $( "#update-form").data("id",$(this).data('id'));
                             $( "#update-form" ).dialog( "open" );
 
-
                             });
+                     $("#next_generation").on("click","a.delete"  , function (){
+                          delete_painting( $(this).data('id'));
 
+                     });
 
                      },
                     error: function(jqXHR, textStatus, errorThrown)  {
@@ -323,6 +326,29 @@ return parents;
 	     }
 
          });
+
+
+        function delete_painting(painting_id)
+        {
+              $.ajax(
+                {
+                    url: '/evoart',
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({"jsonrpc": "2.0", "method": "delete_painting", "params": [painting_id], "id": 1 }),
+                    dataType: "json",
+                    success: function(data, textStatus, jqXHR) {
+
+                        getCollectionUser();
+                     },
+                    error: function(jqXHR, textStatus, errorThrown)  {
+                        alert ("Error:" + textStatus+" "+errorThrown+" "+jqXHR.responseText);}
+                });
+
+
+        }
+
+
 
         function getCollection(){
 

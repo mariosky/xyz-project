@@ -110,10 +110,6 @@ def upload_minimal(request):
 @csrf_exempt
 def update_paint(request):
     if request.method == 'POST':
-
-
-
-
             painting = Painting.objects.get(pk=int(request.POST[u'id']))
             painting.title = request.POST[u'title']
             painting.summary = request.POST[u'summary']
@@ -147,6 +143,13 @@ def evoart(request):
             result = [(paint.id, paint.image.url.split("?")[0], paint.title, paint.summary) for paint in paintings]
             data = json.dumps({"result":result , "error": None, "id": id})
             return HttpResponse(data, mimetype='application/javascript')
+        if method == "delete_painting":
+            painting = Painting.objects.get(pk=int(params[0]))
+            painting.delete()
+            data = json.dumps({"result":"deleted" , "error": None, "id": id})
+            return HttpResponse(data, mimetype='application/javascript')
+            
+
     else:
         return HttpResponse("ajax & post please", mimetype='text')
 
