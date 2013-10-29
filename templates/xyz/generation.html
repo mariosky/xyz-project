@@ -221,8 +221,8 @@ return parents;
         });
 
         $("#next_generation").on("click","a.edit"  , function (){
-            $("#title_update")[0].value=$(this).data('title',paintings[i][2]);
-            $("#description_update")[0].value=$(this).data('summary',paintings[i][3]);
+            $("#title_update")[0].value=$(this).data('title');
+            $("#description_update")[0].value=$(this).data('summary');
             $( "#update-form" ).dialog( "open" );
 
 
