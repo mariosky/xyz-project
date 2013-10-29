@@ -52,7 +52,7 @@ def generation(request,gen=0):
         print "gen", gen
         # Trae la ultima generacion
         next_gen = Generation.objects.filter(next_generation=True)[0]
-        print next_gen.generation_number,gen < next_gen.generation_number, gen != 0
+        print next_gen.generation_number,gen < next_gen.generation_number, gen != 0, type(gen), type(next_gen.generation_number)
         # Si no se especifica la gen, significa que es la ultima y vamos a agregar nuevas pinturas
         if gen != 0 and (gen < next_gen.generation_number):
             old_gen = Generation.objects.filter(generation_number=gen)[0]
