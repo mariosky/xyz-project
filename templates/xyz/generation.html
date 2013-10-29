@@ -194,6 +194,7 @@ return parents;
                     dataType: "json",
                     success: function(data, textStatus, jqXHR) {
 
+                        $( "#next_generation").empty();
                         getCollectionUser();
                      },
                     error: function(jqXHR, textStatus, errorThrown)  {
@@ -254,7 +255,7 @@ return parents;
                      $("#next_generation").on("click","a.delete"  , function (){
 
                           delete_painting( $(this).data('id'));
-                          getCollectionUser();
+
 
                      });
 
