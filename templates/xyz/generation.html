@@ -221,7 +221,8 @@ return parents;
         });
 
         $("#next_generation").on("click","a.edit"  , function (){
-
+            $("#title_update")[0].value=$(this).title;
+            $("#description_update")[0].value=$(this).summary;
             $( "#update-form" ).dialog( "open" );
 
 
@@ -318,10 +319,13 @@ return parents;
 						var paintings =data.result;
                          for (var i=0; i<paintings.length; i++){
 
-                             alert(paintings[i][2] +"," +paintings[i][3])
+
 
                              var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
                              var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
+                             $edit.title = paintings[i][2];
+                             $edit.summary = paintings[i][3];
+
 
                              var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
 
@@ -331,6 +335,7 @@ return parents;
 
 
                              var $thumbnail =  $('<div />',{class:"thumbnail",id:paintings[i][0] }).append($fanzy, $caption);
+
 
 
                              $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#next_generation");
@@ -485,11 +490,11 @@ return parents;
 
    <div class="input-group">
     <span class="input-group-addon">Titulo</span>
-    <input id="title" type="text" class="form-control"/>
+    <input id="title_update" type="text" class="form-control"/>
     </div>
     <div class="input-group">
         <span class="input-group-addon">Descripción</span>
-        <textarea  id="Description" class="form-control" rows="8" placeholder="Aquí la descripción"></textarea>
+        <textarea  id="description_update" class="form-control" rows="8" placeholder="Aquí la descripción"></textarea>
     </div>
 
     <div class="row">
