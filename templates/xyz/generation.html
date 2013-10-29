@@ -65,7 +65,10 @@
   xhr.send(fd);
        }
 
-
+     function uploadCpmplete()
+     {
+         $( "#update-form" ).dialog.close();
+     }
 
 
      function uploadProgress(evt) {
