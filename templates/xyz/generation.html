@@ -221,6 +221,8 @@ return parents;
 
 
                              var $thrash =  $('<a />',{class:"btn btn-sm delete",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
+                             $thrash.data('id', paintings[i][0]);
+
                              var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" ,id:paintings[i][0] }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
                              $edit.data('title',paintings[i][2]);
                              $edit.data('summary', paintings[i][3]);
@@ -248,7 +250,9 @@ return parents;
                             $( "#update-form" ).dialog( "open" );
 
                             });
+
                      $("#next_generation").on("click","a.delete"  , function (){
+
                           delete_painting( $(this).data('id'));
 
                      });
