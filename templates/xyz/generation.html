@@ -128,7 +128,7 @@ function uploadComplete(evt) {
   for (var i=0; i<paintings.length; i++){
 
         var $thrash =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-trash"} ) );
-        var $edit =  $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
+        var $edit =  $('<a />',{class:"btn btn-sm edit",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-pencil"} ) );
 
         var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
 
@@ -223,7 +223,7 @@ return parents;
                             $( "#update-form" ).dialog( "open" );
 
 
-        });
+                            });
 
 
                      },
