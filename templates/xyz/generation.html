@@ -345,12 +345,11 @@ return parents;
   </div>
 
 
-    <div class="btn-toolbar" style="margin: 0;">
-          <div class="btn-toolbar" style="margin: 0;">
+    <div class="btn-group">
         {% for gen in past_gens %}
-              <div class="btn-group" class="btn btn-default">{{ gen.generation_number }}</div>
+             <button type="button" class="btn btn-default">  <a href="generation/{{gen.generation_number}}"> {{ gen.generation_number }}</a>    </button>
+           
         {% endfor %}
-    </div>
     </div>
 
 
