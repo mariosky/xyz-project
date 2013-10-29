@@ -49,7 +49,7 @@ def index(request):
 
 def generation(request,gen=0):
     if request.user.is_authenticated():
-        print "gen", gen
+        gen = int(gen)
         # Trae la ultima generacion
         next_gen = Generation.objects.filter(next_generation=True)[0]
         print next_gen.generation_number,gen < next_gen.generation_number, gen != 0, type(gen), type(next_gen.generation_number)
