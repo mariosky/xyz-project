@@ -54,7 +54,7 @@ def generation(request,gen=0):
         # Si no se especifica la gen, significa que es la ultima y vamos a agregar nuevas pinturas
         if gen != 0 and (gen < next_gen.generation_number-1)  :
             old_gen = Generation.objects.filter(generation_number=gen)[0]
-            return render_to_response('xyz/generation.html',{'next_gen':next_gen,
+            return render_to_response('xyz/gen_view.html',{'next_gen':next_gen,
                                 "current_gen":next_gen.generation_number-1, "paintings":old_gen},
                                 context_instance=RequestContext(request))
         else:
