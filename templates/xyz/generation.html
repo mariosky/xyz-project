@@ -215,9 +215,15 @@ return parents;
 
 
                              $('<div />', {class:"col-sm-3 col-md-2"} ).append( $thumbnail).appendTo("#next_generation");
+                          }
+                     $("#next_generation").on("click","a.edit"  , function (){
+                            $("#title_update")[0].value=$(this).data('title');
+                            $("#description_update")[0].value=$(this).data('summary');
+                            $( "#update-form").data("id",$(this).data('id'));
+                            $( "#update-form" ).dialog( "open" );
 
 
-                         }
+        });
 
 
                      },
