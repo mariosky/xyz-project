@@ -75,7 +75,7 @@
       <file leaf-file-name="gen_view.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/gen_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="8" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.34642032" vertical-offset="1620" max-vertical-offset="2415">
+            <state line="134" column="16" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.79676676" vertical-offset="1665" max-vertical-offset="2430">
               <folding />
             </state>
           </provider>
@@ -655,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/gen_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="8" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.34642032" vertical-offset="1620" max-vertical-offset="2415">
+        <state line="134" column="16" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.79676676" vertical-offset="1665" max-vertical-offset="2430">
           <folding />
         </state>
       </provider>
