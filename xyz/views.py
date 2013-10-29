@@ -110,7 +110,7 @@ def upload_minimal(request):
 @csrf_exempt
 def update_paint(request):
     if request.method == 'POST':
-            print request.POST[u'parents']
+            
 
 
 
