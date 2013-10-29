@@ -253,9 +253,8 @@ return parents;
 
                      $("#next_generation").on("click","a.delete"  , function (){
 
-                          alert($(this).data('id'))
-
                           delete_painting( $(this).data('id'));
+                          getCollectionUser();
 
                      });
 
