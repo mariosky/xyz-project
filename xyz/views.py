@@ -20,6 +20,12 @@ import urlparse
 import json
 
 
+
+def logout_view(request):
+    logout(request)
+
+
+
 def index(request):
     print "index"
     if request.user.is_authenticated():

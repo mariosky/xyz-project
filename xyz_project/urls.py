@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^upload.html$', 'xyz.views.upload', name='upload'),
     url(r'^upload_minimal', 'xyz.views.upload_minimal', name='upload_minimal'),
     url(r'^evoart', 'xyz.views.evoart', name='evoart'),
+    url(r'^logout', 'xyz.views.logout_view', name='logout_view'),
 
     url(r'^update_paint', 'xyz.views.update_paint', name='update_paint'),
 
