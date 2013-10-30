@@ -23,6 +23,8 @@ import json
 
 def logout_view(request):
     logout(request)
+    return render_to_response('xyz/signin.html', {}, context_instance=RequestContext(request))
+
 
 
 
