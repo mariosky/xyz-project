@@ -268,20 +268,8 @@ return parents;
 
       $(document).ready(function() {
 
-           $( "#dialog-confirm" ).dialog({
-        resizable: false,
-        height:140,
-        modal: true,
-        buttons: {
-           "Delete all items": function() {
-                    $( this ).dialog( "close" );
-                      },
-            Cancel: function() {
-                    $( this ).dialog( "close" );
-                    }
-                }
-       });
-          
+
+
 
            $( "#dialog-form" ).dialog({
                 autoOpen: false,
@@ -346,7 +334,27 @@ return parents;
 
         $("#next_generation").on("click","a.delete"  , function (){
 
-                          delete_painting( $(this).data('id'));
+                          $( "#dialog-confirm" ).dialog({
+        resizable: false,
+        height:140,
+        modal: true,
+        buttons: {
+           "Borrar": function() {
+
+                    $( this ).dialog( "close" );
+                    delete_painting( $(this).data('id'));
+               
+                      },
+            Cancel: function() {
+                    $( this ).dialog( "close" );
+                    }
+                }
+       });
+
+
+
+
+
 
 
                      });
