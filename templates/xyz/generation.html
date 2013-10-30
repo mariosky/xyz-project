@@ -322,6 +322,12 @@ return parents;
 
         });
 
+
+
+          
+
+
+
         $("#next_generation").on("click","a.delete"  , function (){
 
                           delete_painting( $(this).data('id'));
@@ -513,6 +519,13 @@ return parents;
 {%  endcomment %}
 
  </section>
+
+<div id="dialog-confirm" title="¿Borrar la pintura?">
+<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;">
+
+</span>Esta pintura será borrada definitivamente.</p>
+</div>
+
 
 <div id="dialog-form" title="Agrega nueva pintura">
   <form id="form1" enctype="multipart/form-data" method="post" action="upload">
