@@ -327,14 +327,8 @@ return parents;
         });
 
 
-
-
-
-
-
-        $("#next_generation").on("click","a.delete"  , function (){
-
-                          $( "#dialog-confirm" ).dialog({
+      $( "#dialog-confirm" ).dialog({
+        autoOpen:false,
         resizable: false,
         height:140,
         modal: true,
@@ -343,7 +337,7 @@ return parents;
 
                     $( this ).dialog( "close" );
                     delete_painting( $(this).data('id'));
-               
+
                       },
             Cancel: function() {
                     $( this ).dialog( "close" );
@@ -354,6 +348,14 @@ return parents;
 
 
 
+
+
+        $("#next_generation").on("click","a.delete"  , function (){
+
+
+
+
+                     $( "#dialog-confirm" ).dialog( "open" );
 
 
 
