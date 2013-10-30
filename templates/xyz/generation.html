@@ -184,6 +184,21 @@ return parents;
 
      <script type="text/javascript" charset="utf-8">
 
+      $( "#dialog-confirm" ).dialog({
+        resizable: false,
+        height:140,
+        modal: true,
+        buttons: {
+           "Delete all items": function() {
+                    $( this ).dialog( "close" );
+                      },
+            Cancel: function() {
+                    $( this ).dialog( "close" );
+                    }
+                }
+       });
+
+
        function delete_painting(painting_id)
         {
               $.ajax(
@@ -324,7 +339,7 @@ return parents;
 
 
 
-          
+
 
 
 
