@@ -41,7 +41,7 @@
       <file leaf-file-name="signin.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="61" selection-start="997" selection-end="997" vertical-scroll-proportion="0.48307693" vertical-offset="121" max-vertical-offset="795">
+            <state line="25" column="0" selection-start="823" selection-end="823" vertical-scroll-proportion="0.39076924" vertical-offset="121" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -651,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="61" selection-start="997" selection-end="997" vertical-scroll-proportion="0.48307693" vertical-offset="121" max-vertical-offset="795">
+        <state line="25" column="0" selection-start="823" selection-end="823" vertical-scroll-proportion="0.39076924" vertical-offset="121" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
