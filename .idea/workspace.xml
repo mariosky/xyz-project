@@ -4,7 +4,7 @@
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/signin.html" afterPath="$PROJECT_DIR$/templates/xyz/signin.html" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="0.089020774" vertical-offset="345" max-vertical-offset="2610">
+            <state line="28" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2610">
               <folding>
                 <element signature="e#30#88#0" expanded="true" />
               </folding>
@@ -38,22 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
+      <file leaf-file-name="signin.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="673" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+            <state line="29" column="61" selection-start="997" selection-end="997" vertical-scroll-proportion="0.48307693" vertical-offset="121" max-vertical-offset="795">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generation.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="451" column="0" selection-start="15344" selection-end="15344" vertical-scroll-proportion="-1.875" vertical-offset="6720" max-vertical-offset="9255">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +70,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/templates/xyz_project/index.html" />
-        <option value="$PROJECT_DIR$/templates/xyz/signin.html" />
         <option value="$PROJECT_DIR$/xyz_project/settings.py" />
         <option value="$PROJECT_DIR$/xyz/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/templates/xyz/upload.html" />
@@ -92,11 +80,12 @@
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
         <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
         <option value="$PROJECT_DIR$/xyz/views.py" />
+        <option value="$PROJECT_DIR$/templates/xyz/signin.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="374" />
+    <option name="x" value="131" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
@@ -503,7 +492,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="374" y="22" width="1440" height="820" extended-state="0" />
+    <frame x="131" y="22" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -512,9 +501,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09971306" sideWeight="0.55413103" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23457676" sideWeight="0.55413103" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09971306" sideWeight="0.44444445" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23457676" sideWeight="0.44444445" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23850575" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37463978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34330484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -594,11 +583,6 @@
         <state line="173" column="0" selection-start="6142" selection-end="6142" vertical-scroll-proportion="0.1890332" vertical-offset="2299" max-vertical-offset="8145" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="795" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xyz/static/images/_small/3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -658,10 +642,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="0.089020774" vertical-offset="345" max-vertical-offset="2610">
+        <state line="28" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2610">
           <folding>
             <element signature="e#30#88#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="61" selection-start="997" selection-end="997" vertical-scroll-proportion="0.48307693" vertical-offset="121" max-vertical-offset="795">
+          <folding />
         </state>
       </provider>
     </entry>
