@@ -346,20 +346,10 @@ return parents;
        });
 
 
-
-
-
-
         $("#next_generation").on("click","a.delete"  , function (){
-
-
-
-
+                     $( "#dialog-confirm" ).data("id", $(this).data('id'));
                      $( "#dialog-confirm" ).dialog( "open" );
-
-
-
-                     });
+        });
 
          $.ajaxSetup({
 	     beforeSend: function(xhr, settings) {
