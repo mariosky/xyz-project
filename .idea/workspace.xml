@@ -4,7 +4,9 @@
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/templates/xyz/index.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/xyz/static/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/signin.html" afterPath="$PROJECT_DIR$/templates/xyz/signin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/generation.html" afterPath="$PROJECT_DIR$/templates/xyz/generation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,18 +32,25 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2610">
-              <folding>
-                <element signature="e#30#88#0" expanded="true" />
-              </folding>
+            <state line="144" column="75" selection-start="5632" selection-end="5632" vertical-scroll-proportion="0.0" vertical-offset="1580" max-vertical-offset="2400">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
+      <file leaf-file-name="generation.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="823" selection-end="823" vertical-scroll-proportion="0.39076924" vertical-offset="121" max-vertical-offset="795">
+            <state line="399" column="83" selection-start="13577" selection-end="13577" vertical-scroll-proportion="-0.57471263" vertical-offset="6435" max-vertical-offset="9255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xyz_project/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="39" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="3075">
               <folding />
             </state>
           </provider>
@@ -78,17 +87,17 @@
         <option value="$PROJECT_DIR$/xyz/static/css/starter-template.css" />
         <option value="$PROJECT_DIR$/templates/xyz/gen_view.html" />
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
-        <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
-        <option value="$PROJECT_DIR$/xyz/views.py" />
         <option value="$PROJECT_DIR$/templates/xyz/signin.html" />
+        <option value="$PROJECT_DIR$/xyz/views.py" />
+        <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="131" />
+    <option name="x" value="20" />
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="820" />
+    <option name="width" value="1679" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -116,7 +125,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,7 +167,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xyz" />
+              <option name="myItemId" value="venv" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,20 +191,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="164" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="165" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="165" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="165" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xyz_project/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../evoart2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="175" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="849" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="847" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="849" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="170" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="167" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -320,27 +329,7 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="XYZ" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -366,7 +355,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="XYZ" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -492,7 +501,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="131" y="22" width="1440" height="820" extended-state="0" />
+    <frame x="20" y="22" width="1679" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -501,9 +510,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23457676" sideWeight="0.55413103" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18432333" sideWeight="0.5538695" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23457676" sideWeight="0.44444445" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23735726" sideWeight="0.4461305" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23850575" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37463978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34330484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -532,9 +541,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17570664" sideWeight="0.8799435" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38297874" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38297874" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -569,15 +578,6 @@
         <state line="8" column="624" selection-start="842" selection-end="844" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="210" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyz_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="641" selection-end="641" vertical-scroll-proportion="0.397351" vertical-offset="0" max-vertical-offset="3090">
-          <folding>
-            <element signature="e#45#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/boto/s3/connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="173" column="0" selection-start="6142" selection-end="6142" vertical-scroll-proportion="0.1890332" vertical-offset="2299" max-vertical-offset="8145" />
@@ -605,23 +605,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="550" selection-end="599" vertical-scroll-proportion="0.45045045" vertical-offset="0" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/gen_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="42" selection-start="2242" selection-end="2242" vertical-scroll-proportion="1.6483517" vertical-offset="0" max-vertical-offset="2460">
-          <folding />
-        </state>
+        <state line="20" column="6" selection-start="550" selection-end="599" vertical-scroll-proportion="0.45045045" vertical-offset="0" max-vertical-offset="666" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/static/css/starter-template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="94" selection-end="94" vertical-scroll-proportion="0.13353115" vertical-offset="0" max-vertical-offset="674">
-          <folding />
-        </state>
+        <state line="6" column="21" selection-start="94" selection-end="94" vertical-scroll-proportion="0.13353115" vertical-offset="0" max-vertical-offset="674" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
@@ -631,27 +620,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
+    <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="451" column="0" selection-start="15344" selection-end="15344" vertical-scroll-proportion="-1.875" vertical-offset="6720" max-vertical-offset="9255">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="23" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.36738056" vertical-offset="122" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/gen_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="56" selection-start="3678" selection-end="3678" vertical-scroll-proportion="3.6699028" vertical-offset="0" max-vertical-offset="2460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyz_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="3075">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2610">
-          <folding>
-            <element signature="e#30#88#0" expanded="true" />
-          </folding>
+        <state line="144" column="75" selection-start="5632" selection-end="5632" vertical-scroll-proportion="0.0" vertical-offset="1580" max-vertical-offset="2400">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/signin.html">
+    <entry file="file://$PROJECT_DIR$/templates/xyz/generation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="823" selection-end="823" vertical-scroll-proportion="0.39076924" vertical-offset="121" max-vertical-offset="795">
+        <state line="399" column="83" selection-start="13577" selection-end="13577" vertical-scroll-proportion="-0.57471263" vertical-offset="6435" max-vertical-offset="9255">
           <folding />
         </state>
       </provider>

@@ -397,7 +397,7 @@ return parents;
                          for (var i=0; i<paintings.length; i++){
 
                             // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
-                             var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) );
+                             var $caption = $('<div><h6>'+paintings[i][1] +'</h6></div>', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) );
 
                              var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                                                 $('<img />', {src:paintings[i][1],alt:"title" }));
