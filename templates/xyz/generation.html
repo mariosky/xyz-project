@@ -397,7 +397,7 @@ return parents;
                          for (var i=0; i<paintings.length; i++){
 
                             // var $caption = $('<div />', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }) )
-                             var $caption = $('<div><h6>'+paintings[i][2] +'</h6></div>', {class:"caption"}).append( $('<a />',{class:"btn btn-sm",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) );
+                             var $caption = $('<div><h6>'+paintings[i][2] +'</h6></div>', {class:"caption"}).append( $('<a />',{class:"btn btn-sm add",href:"#" }).append($("<span />", {class:"glyphicon glyphicon-heart"} ) ) );
 
                              var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                                                 $('<img />', {src:paintings[i][1],alt:"title" }));
@@ -408,7 +408,7 @@ return parents;
 
                          }
 
-                        $("#prev_generation .caption>.btn").click(function (){
+                        $("#prev_generation a.add").click(function (){
                             $(this).toggleClass("btn-success");
                              if ( $(".btn-success").length > 0 && $(".btn-success").length <=2 )
                             {
