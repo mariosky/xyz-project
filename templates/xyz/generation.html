@@ -134,7 +134,7 @@ function uploadComplete(evt) {
         $edit.data('summary', paintings[i][3]);
         $edit.data('id', paintings[i][0]);
 
-        var $caption = $('<div />', {class:"caption"}).append($edit, $thrash );
+        var $caption = $('<div><h6>'+paintings[i][2] +'</h6></div>', {class:"caption"}).append($edit, $thrash );
 
         var $fanzy  =  $('<a/>',{class:"fancybox",href:paintings[i][1] }).append(
                            $('<img />', {src:paintings[i][1],alt:"title" }))
