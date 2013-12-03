@@ -101,7 +101,11 @@ def upload_minimal(request):
 
             gen = Generation.objects.get(generation_number=int(request.POST[u'generation']))
 
-            painting = Painting(title=request.POST[u'title'], author=request.user, summary=request.POST[u'summary'],
+            titulo = "Sin Titulo"
+            if request.POST[u'title'] == "":
+                titulo = request.POST[u'title']
+
+            painting = Painting(title=titulo, author=request.user, summary=request.POST[u'summary'],
                                 image=request.FILES["fileToUpload"],generation=gen)
             painting.save()
             for _id in request.POST[u'parents'].split(','):
