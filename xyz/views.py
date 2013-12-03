@@ -124,6 +124,8 @@ def update_paint(request):
     if request.method == 'POST':
             painting = Painting.objects.get(pk=int(request.POST[u'id']))
             painting.title = request.POST[u'title']
+            if painting.title == "":
+                painting.title = "Sin Titulo"
             painting.summary = request.POST[u'summary']
 
             painting.save()
