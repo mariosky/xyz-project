@@ -126,10 +126,9 @@
                     <li>
                         <ul data-option-key="filter" class="optionset">
                             <li class="selected"><a data-option-value="*" href="#filter">All Works</a></li>
-                            <li><a title="View all post filed under Portraits" data-option-value=".portraits" href="#filter">Portraits</a></li>
-                            <li><a title="View all post filed under Fashion" data-option-value=".fashion" href="#filter">Fashion</a></li>
-                            <li><a title="View all post filed under Stories" data-option-value=".stories" href="#filter">Stories</a></li>
-                        </ul>
+                            {% for g in gens %}
+                            <li><a title="View all post filed under {{ g|cut:" "}}" data-option-value=".{{ g|cut:" " }}" href="#filter">{{ g|cut:" "}}</a></li>
+                            {% endfor %}                        </ul>
                     </li>
                 </ul>
             </div><!-- .filter_navigation -->
@@ -137,7 +136,7 @@
 
         <div class="portfolio_block image-grid fs_grid_module" id="list">
            {% for painting in paintings %}
-        	<div data-category="{{ painting.generation }}" class="grid_gallery-item {{ painting.generation }} element">
+        	<div data-category="{{ painting.generation }}" class="grid_gallery-item {{ painting.generation|cut:" "}} element">
 				<div class="filter_img gallery_item">
                     <a href="portfolio_post_fw.html">
                         <img src="{{STATIC_URL}}{{ painting.image }}" alt="" width="384" height="272">
@@ -163,46 +162,10 @@
 			 {% for painting in paintings %}
 
 
-	        {src : '{{STATIC_URL}}{{ painting.image }}', url : 'portfolio_post_fw.html', post_type : 'image', category: '{{ painting.generation }}', title : '{{ painting.title }}', description: ''},
+	        {src : '{{STATIC_URL}}{{ painting.image }}', url : 'portfolio_post_fw.html', post_type : 'image', category: '{{ painting.generation|cut:" " }}', title : '{{ painting.title }}', description: ''},
 
             {% endfor %}
 
-
-
-				{src : 'img/gallery/gallery_grid2-2.jpg', url : 'portfolio_post_fw.html', post_type : 'audio', category: 'fashion', title : 'Vestibulum faucibus velit', description: 'Nunc tristique urna vitae eros aliquam consectetur. Nullam porttitor auctor.'},	
-			
-				{src : 'img/gallery/gallery_grid2-3.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Aliquam eleifend purus', description: 'Maecenas lobortis justo vitae odio aliquam vel gravida ipsum bibendum.'},	
-			
-				{src : 'img/gallery/gallery_grid2-4.jpg', url : 'portfolio_post_fw.html', post_type : 'gallery', category: 'portraits', title : 'Lorem ipsum dolor', description: 'Aliquam et dolor a dui imperdiet luctus. Etiam ultrices imperdiet nibh.'},
-			
-				{src : 'img/gallery/gallery_grid2-5.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Sed eget leo orci', description: 'Suspendisse tortor metus, suscipit eget vehicula in, hendrerit sed diam.'},	
-				
-				{src : 'img/gallery/gallery_grid2-6.jpg', url : 'portfolio_post_fw.html', post_type : 'text', category: 'fashion', title : 'Cras facilisis', description: 'Fusce pellentesque laoreet quam ac rutrum. Nunc lobortis odio et mauris.'},
-			
-				{src : 'img/gallery/gallery_grid2-7.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'portraits', title : 'Phasellus fringilla', description: 'Sed eget leo orci, ut pretium massa. Suspendisse tortor metus.'},
-			
-				{src : 'img/gallery/gallery_grid2-8.jpg', url : 'portfolio_post_fw.html', post_type : 'video', category: 'stories', title : 'Cras facilisis tellus', description: 'Proin dapibus arcu nec diam faucibus vestibulum. In hac habitasse platea.'},
-	
-				{src : 'img/gallery/gallery_grid2-9.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'portraits', title : 'Fusce pellentesque laoreet', description: 'Nunc lobortis odio et mauris iaculis id sollicitudin eros imperdiet.'},	
-			
-				{src : 'img/gallery/gallery_grid2-10.jpg', url : 'portfolio_post_fw.html', post_type : 'audio', category: 'fashion', title : 'Vestibulum faucibus velit', description: 'Nunc tristique urna vitae eros aliquam consectetur. Nullam porttitor auctor.'},	
-			
-				{src : 'img/gallery/gallery_grid2-11.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Aliquam eleifend purus', description: 'Maecenas lobortis justo vitae odio aliquam vel gravida ipsum bibendum.'},	
-			
-				{src : 'img/gallery/gallery_grid2-12.jpg', url : 'portfolio_post_fw.html', post_type : 'gallery', category: 'portraits', title : 'Lorem ipsum dolor', description: 'Aliquam et dolor a dui imperdiet luctus. Etiam ultrices imperdiet nibh.'},
-			
-				{src : 'img/gallery/gallery_grid2-13.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Sed eget leo orci', description: 'Suspendisse tortor metus, suscipit eget vehicula in, hendrerit sed diam.'},	
-				
-				{src : 'img/gallery/gallery_grid2-14.jpg', url : 'portfolio_post_fw.html', post_type : 'text', category: 'fashion', title : 'Cras facilisis', description: 'Fusce pellentesque laoreet quam ac rutrum. Nunc lobortis odio et mauris.'},
-			
-				{src : 'img/gallery/gallery_grid2-15.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'portraits', title : 'Phasellus fringilla', description: 'Sed eget leo orci, ut pretium massa. Suspendisse tortor metus.'},
-			
-				{src : 'img/gallery/gallery_grid2-16.jpg', url : 'portfolio_post_fw.html', post_type : 'video', category: 'stories', title : 'Cras facilisis tellus', description: 'Proin dapibus arcu nec diam faucibus vestibulum. In hac habitasse platea.'},
-	
-				{src : 'img/gallery/gallery_grid2-17.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Sed eget leo orci', description: 'Suspendisse tortor metus, suscipit eget vehicula in, hendrerit sed diam.'},	
-				
-				{src : 'img/gallery/gallery_grid2-18.jpg', url : 'portfolio_post_fw.html', post_type : 'text', category: 'fashion', title : 'Cras facilisis', description: 'Fusce pellentesque laoreet quam ac rutrum. Nunc lobortis odio et mauris.'}
-						
 			];
 			$(window).load(function(){
 				$('#list').portfolio_addon({

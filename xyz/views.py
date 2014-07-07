@@ -27,7 +27,8 @@ def logout_view(request):
 
 def gallery_masonry(request):
     paintings = Painting.objects.all()
-    return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings}, context_instance=RequestContext(request))
+    gens = Generation.objects.all()
+    return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings, "gens":gens}, context_instance=RequestContext(request))
 
 
 
