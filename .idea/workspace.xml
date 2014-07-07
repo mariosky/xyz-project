@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/frame.html" afterPath="$PROJECT_DIR$/templates/xyz/frame.html" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="39" selection-start="919" selection-end="971" vertical-scroll-proportion="0.4404946" vertical-offset="45" max-vertical-offset="2550">
+            <state line="26" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="-5.4" vertical-offset="45" max-vertical-offset="2550">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frame.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="frame.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/frame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="196" selection-start="7477" selection-end="7477" vertical-scroll-proportion="-20.458334" vertical-offset="1399" max-vertical-offset="2385">
+            <state line="126" column="184" selection-start="7465" selection-end="7465" vertical-scroll-proportion="0.31496063" vertical-offset="1690" max-vertical-offset="2385">
               <folding />
             </state>
           </provider>
@@ -130,13 +130,13 @@
         <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
         <option value="$PROJECT_DIR$/templates/xyz/gen_view.html" />
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
-        <option value="$PROJECT_DIR$/templates/xyz/frame.html" />
         <option value="$PROJECT_DIR$/xyz/views.py" />
+        <option value="$PROJECT_DIR$/templates/xyz/frame.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="88" />
+    <option name="x" value="188" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="816" />
@@ -526,7 +526,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="22" width="1920" height="816" extended-state="0" />
+    <frame x="188" y="22" width="1920" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -736,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/frame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="196" selection-start="7477" selection-end="7477" vertical-scroll-proportion="-20.458334" vertical-offset="1399" max-vertical-offset="2385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="510">
@@ -752,7 +745,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="39" selection-start="919" selection-end="971" vertical-scroll-proportion="0.4404946" vertical-offset="45" max-vertical-offset="2550">
+        <state line="26" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="-5.4" vertical-offset="45" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/frame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="184" selection-start="7465" selection-end="7465" vertical-scroll-proportion="0.31496063" vertical-offset="1690" max-vertical-offset="2385">
           <folding />
         </state>
       </provider>
