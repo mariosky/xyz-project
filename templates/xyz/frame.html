@@ -122,6 +122,12 @@
 
     <script>
 		gallery_set = [	//Gallery Data
+            {% for painting in paintings %}
+
+          	{image : "{{STATIC_URL}}{{ painting.image }}", thmb : 'img/gallery/thmb/gallery01.jpg', alt : 'Awesome Theme', fit : 'cover', title : "{{ painting.title }}", description: "{{ painting.summary }}"},
+
+
+            {% endfor %}
 			{image : 'img/gallery/20013.jpg', thmb : 'img/gallery/thmb/gallery01.jpg', alt : 'Awesome Theme', fit : 'cover', title : "Awesome Theme", description: "right here we've got something you gonna love..."},
 			{image : 'img/gallery/G-4.jpg', thmb : 'img/gallery/thmb/gallery02.jpg', alt : 'Lorem ipsum', fit : 'cover', title : "Lorem ipsum", description: "lorem ipsum dolor sit amet, consectetur adipiscing."},
 			{image : 'img/gallery/G1_2.jpg', thmb : 'img/gallery/thmb/gallery03.jpg', alt : 'Dolor sit amet', fit : 'cover', title : "Dolor sit amet", description: "proin molestie pulvinar lorem sit amet placerat."},
@@ -133,16 +139,6 @@
 			{image : 'img/gallery/G6-P.jpg', thmb : 'img/gallery/thmb/gallery09.jpg', alt : 'Vestibulum eget', fit : 'cover', title : "Vestibulum eget", description: "varius interdum mauris sagittis tempor."},
 			{image : 'img/gallery/G6-redimensionada.jpg', thmb : 'img/gallery/thmb/gallery10.jpg', alt : 'Curabitur pulvinar', fit : 'cover', title : "Curabitur pulvinar", description: "mauris pretium facilisis nisl nec suscipit."},
 
-			{image : 'img/gallery/G7_br.jpg', thmb : 'img/gallery/thmb/gallery11.jpg', alt : 'Cras lobortis est', fit : 'cover', title : "Cras lobortis est", description: "quisque in ante ut augue rutrum venenatis urna."},
-			{image : 'img/gallery/G7-P.jpg', thmb : 'img/gallery/thmb/gallery12.jpg', alt : 'Sed non ante', fit : 'cover', title : "Sed non ante", description: "curabitur mollis aliquet ligula tincidunt venenatis."},
-			{image : 'img/gallery/G7.jpg', thmb : 'img/gallery/thmb/gallery13.jpg', alt : 'Aliquam tincidunt', fit : 'cover', title : "Aliquam tincidunt", description: "integer risus nibh, elementum non blandit suscipit."},
-			{image : 'img/gallery/gallery14.jpg', thmb : 'img/gallery/thmb/gallery14.jpg', alt : 'Ut nec diam ac', fit : 'cover', title : "Ut nec diam ac", description: "morbi et dignissim tellus, eu porttitor lacus."},
-			{image : 'img/gallery/gallery15.jpg', thmb : 'img/gallery/thmb/gallery15.jpg', alt : 'Dignissim ac nec', fit : 'cover', title : "Dignissim ac nec", description: "in id pellentesque libero, id luctus enim."},
-			{image : 'img/gallery/gallery16.jpg', thmb : 'img/gallery/thmb/gallery16.jpg', alt : 'Felis id lacus', fit : 'cover', title : "Felis id lacus", description: "class aptent taciti sociosqu ad litora torquent per."},
-			{image : 'img/gallery/gallery17.jpg', thmb : 'img/gallery/thmb/gallery17.jpg', alt : 'Ut non lobortis', fit : 'cover', title : "Ut non lobortis", description: "phasellus id volutpat neque, ut malesuada erat."},
-			{image : 'img/gallery/gallery18.jpg', thmb : 'img/gallery/thmb/gallery18.jpg', alt : 'At lobortis massa', fit : 'cover', title : "At lobortis massa", description: "curabitur porta risus et consectetur consectetur."},
-			{image : 'img/gallery/gallery19.jpg', thmb : 'img/gallery/thmb/gallery19.jpg', alt : 'Id luctus enim', fit : 'cover', title : "Id luctus enim", description: "interdum et malesuada fames ac ante ipsum primis. "},
-			{image : 'img/gallery/gallery20.jpg', thmb : 'img/gallery/thmb/gallery20.jpg', alt : 'Quisque in ante ut', fit : 'cover', title : "Quisque in ante ut", description: "donec nec facilisis erat, sed porttitor odio."}
 		];
 		$('body').fs_gallery({
 			fx : 'fade', /*fade, zoom, slide_left, slide_right, slide_top, slide_bottom*/
