@@ -30,7 +30,7 @@ def logout_view(request):
 
 def gallery(request):
     paintings = Painting.objects.all()
-    return render_to_response('xyz/frame.html', {paintings}, context_instance=RequestContext(request))
+    return render_to_response('xyz/frame.html', { "paintings":paintings}, context_instance=RequestContext(request))
 
 
 def index(request):

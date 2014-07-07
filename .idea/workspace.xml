@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/frame.html" afterPath="$PROJECT_DIR$/templates/xyz/frame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
     </list>
     <ignored path="XYZ.iws" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="21" selection-start="702" selection-end="702" vertical-scroll-proportion="0.25586355" vertical-offset="0" max-vertical-offset="2550">
+            <state line="36" column="39" selection-start="919" selection-end="971" vertical-scroll-proportion="0.4404946" vertical-offset="45" max-vertical-offset="2550">
               <folding />
             </state>
           </provider>
@@ -131,8 +130,8 @@
         <option value="$PROJECT_DIR$/templates/xyz/generation.html" />
         <option value="$PROJECT_DIR$/templates/xyz/gen_view.html" />
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
-        <option value="$PROJECT_DIR$/xyz/views.py" />
         <option value="$PROJECT_DIR$/templates/xyz/frame.html" />
+        <option value="$PROJECT_DIR$/xyz/views.py" />
       </list>
     </option>
   </component>
@@ -140,7 +139,7 @@
     <option name="x" value="88" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1107" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -527,7 +526,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="22" width="1920" height="1107" extended-state="6" />
+    <frame x="88" y="22" width="1920" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -753,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="21" selection-start="702" selection-end="702" vertical-scroll-proportion="0.25586355" vertical-offset="0" max-vertical-offset="2550">
+        <state line="36" column="39" selection-start="919" selection-end="971" vertical-scroll-proportion="0.4404946" vertical-offset="45" max-vertical-offset="2550">
           <folding />
         </state>
       </provider>
