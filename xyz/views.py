@@ -28,8 +28,11 @@ def logout_view(request):
 
 
 
+def gallery(request):
+    return render_to_response('xyz/frame.html', {}, context_instance=RequestContext(request))
+
+
 def index(request):
-    print "index"
     if request.user.is_authenticated():
         return HttpResponseRedirect('last_generation')
     else:
