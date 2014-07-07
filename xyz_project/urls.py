@@ -9,7 +9,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'xyz.views.index', name='index'),
+    url(r'^$', 'xyz.views.gallery', name='gallery'),
     url(r'^index.html$', 'xyz.views.gallery', name='gallery'),
     url(r'^last_generation$', 'xyz.views.generation', name='generation'),
     url(r'^generation/(\d*)/$', 'xyz.views.generation', name='generation'),
