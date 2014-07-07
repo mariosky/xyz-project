@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- Mobile Specific Metas
+    +++++++++++++++++++++++++++ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="{{ STATIC_URL}}frame/img/favico.ico">
+
+    <link rel="apple-touch-icon" href="{{ STATIC_URL}}frame/img/apple_icons_57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL}}frame/img/apple_icons_72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL}}frame/img/apple_icons_114x114.png">
+
+    <title>Frame - Grid Portfolio</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme_settings.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/skin.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/color_theme.css" id="theme_color">
+        
+    <!--[if IE 8 ]>
+    <link rel="stylesheet" type="text/css" href="css/ie_css.css">
+    <script>
+        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+        for (var i = 0; i < e.length; i++) {
+            document.createElement(e[i]);
+        }		
+    </script>
+    <![endif]-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/waypoint.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/sorting.js"></script>
+</head>
+
+<body class="fullscreen_layout">
+<header class="">
+        <div class="header_wrapper container">
+        	<a href="index.html" class="logo"><img src="img/logo.png" alt=""  class="logo_def" width="125" height="39"><img src="img/retina/logo.png" alt="" class="logo_retina" width="125" height="39"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)">HOME</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Fullscreen Gallery</a></li>
+                            <li><a href="home_vimeo.html">Vimeo Background</a></li>
+                            <li><a href="home_youtube.html">Youtube Background</a></li>
+                            <li><a href="home_background.html">Image Background</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">PAGES</a>
+                        <ul class="sub-menu">
+	                        <li><a href="wall.html">Fullwidth Wall</a></li>
+                            <li><a href="about.html">About</a></li>                                                        
+                          	<li><a href="grid.html">Grid</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                        </ul>                        
+                    </li>
+                    <li><a href="javascript:void(0)">FEATURES</a>
+                        <ul class="sub-menu">
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="shortcodes.html">Shortcodes</a></li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-parent"><a href="javascript:void(0)">PORTFOLIO</a>
+                        <ul class="sub-menu">
+                            <li><a href="portfolio_grid.html">Grid Portfolio</a></li>
+                            <li class="current-menu-item"><a href="portfolio_masonry.html">Grid Portfolio with Masonry</a></li>
+							<li><a href="portfolio_post_fw.html">Fullscreen Portfolio Post</a></li>
+                            <li><a href="portfolio1.html">Portfolio 1 Column</a></li>
+                            <li><a href="portfolio2.html">Portfolio 2 Columns</a></li>
+                            <li><a href="portfolio3.html">Portfolio 3 Columns</a></li>
+                            <li><a href="portfolio4.html">Portfolio 4 Columns</a></li>
+                            <li><a href="portfolio_post.html">Portfolio Post</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">GALLERIES</a>
+                        <ul class="sub-menu">
+                            <li><a href="gallery_kenburns.html">Kenburns Gallery</a></li>
+                            <li><a href="gallery_grid.html">Grid Gallery</a></li>
+                            <li><a href="gallery_masonry.html">Grid Gallery with Masonry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">BLOG</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog_fullscreen.html">Fullscreen</a></li>
+                            <li><a href="blog_post_fw.html">Fullscreen Blog Post</a></li>
+                            <li><a href="blog_full.html">Full Width</a></li>                            
+                            <li><a href="blogpost_full.html">Blog Post</a></li>
+                            <li><a href="javascript:void(0)">With Sidebar</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog_left.html">Left Sidebar</a></li>
+                                    <li><a href="blog_right.html">Right Sidebar</a></li>
+                                    <li><a href="blogpost_sidebar.html">Blog Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">CONTACTS</a>
+                        <ul class="sub-menu">
+	                        <li><a href="contact_fullscreen.html">Fullscreen</a></li>
+                            <li><a href="contact.html">Full Width</a></li>                            
+                            <li><a href="contact_sidebar.html">With Sidebar</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- .menu -->
+                <div class="clear"></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="fullscreen_block">
+        <div class="filter_block">
+            <div class="filter_navigation">
+                <ul id="options" class="splitter">
+                    <li>
+                        <ul data-option-key="filter" class="optionset">
+                            <li class="selected"><a data-option-value="*" href="#filter">All Works</a></li>
+                            <li><a title="View all post filed under Portraits" data-option-value=".portraits" href="#filter">Portraits</a></li>
+                            <li><a title="View all post filed under Fashion" data-option-value=".fashion" href="#filter">Fashion</a></li>
+                            <li><a title="View all post filed under Stories" data-option-value=".stories" href="#filter">Stories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- .filter_navigation -->
+        </div><!-- .filter_block -->
+
+        <div class="portfolio_block image-grid fs_grid_module" id="list">
+           {% for painting in paintings %}
+        	<div data-category="{{ painting.generation }}" class="grid_gallery-item {{ painting.generation }} element">
+				<div class="filter_img gallery_item">
+                    <a href="portfolio_post_fw.html">
+                        <img src="{{STATIC_URL}}{{ painting.image }}" alt="" width="384" height="272">
+                        <div class="gallery_fadder"></div>
+                        <div class="ico_gallery"></div><!-- .ico_gallery -->
+                        <div class="gallery_descr">
+                            <h6 class="gallery_title">{{ painting.title }}</h6>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+            </div><!-- .grid_gallery-item -->
+
+            {% endfor %}
+
+
+        </div><!-- .portfolio_block -->
+        <div class="clear"></div>
+        <div class="load_more_cont"><a href="javascript:void(0)" class="btn_load_more_fs get_portfolio_works_btn">Load more Works!<span></span></a></div>
+        <script>
+			//<![CDATA[
+			items_set = [	//Gallery Data
+			 {% for painting in paintings %}
+
+
+	        {src : '{{STATIC_URL}}{{ painting.image }}', url : 'portfolio_post_fw.html', post_type : 'image', category: '{{ painting.generation }}', title : '{{ painting.title }}', description: ''},
+
+            {% endfor %}
+
+
+
+				{src : 'img/gallery/gallery_grid2-2.jpg', url : 'portfolio_post_fw.html', post_type : 'audio', category: 'fashion', title : 'Vestibulum faucibus velit', description: 'Nunc tristique urna vitae eros aliquam consectetur. Nullam porttitor auctor.'},	
+			
+				{src : 'img/gallery/gallery_grid2-3.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Aliquam eleifend purus', description: 'Maecenas lobortis justo vitae odio aliquam vel gravida ipsum bibendum.'},	
+			
+				{src : 'img/gallery/gallery_grid2-4.jpg', url : 'portfolio_post_fw.html', post_type : 'gallery', category: 'portraits', title : 'Lorem ipsum dolor', description: 'Aliquam et dolor a dui imperdiet luctus. Etiam ultrices imperdiet nibh.'},
+			
+				{src : 'img/gallery/gallery_grid2-5.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Sed eget leo orci', description: 'Suspendisse tortor metus, suscipit eget vehicula in, hendrerit sed diam.'},	
+				
+				{src : 'img/gallery/gallery_grid2-6.jpg', url : 'portfolio_post_fw.html', post_type : 'text', category: 'fashion', title : 'Cras facilisis', description: 'Fusce pellentesque laoreet quam ac rutrum. Nunc lobortis odio et mauris.'},
+			
+				{src : 'img/gallery/gallery_grid2-7.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'portraits', title : 'Phasellus fringilla', description: 'Sed eget leo orci, ut pretium massa. Suspendisse tortor metus.'},
+			
+				{src : 'img/gallery/gallery_grid2-8.jpg', url : 'portfolio_post_fw.html', post_type : 'video', category: 'stories', title : 'Cras facilisis tellus', description: 'Proin dapibus arcu nec diam faucibus vestibulum. In hac habitasse platea.'},
+	
+				{src : 'img/gallery/gallery_grid2-9.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'portraits', title : 'Fusce pellentesque laoreet', description: 'Nunc lobortis odio et mauris iaculis id sollicitudin eros imperdiet.'},	
+			
+				{src : 'img/gallery/gallery_grid2-10.jpg', url : 'portfolio_post_fw.html', post_type : 'audio', category: 'fashion', title : 'Vestibulum faucibus velit', description: 'Nunc tristique urna vitae eros aliquam consectetur. Nullam porttitor auctor.'},	
+			
+				{src : 'img/gallery/gallery_grid2-11.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Aliquam eleifend purus', description: 'Maecenas lobortis justo vitae odio aliquam vel gravida ipsum bibendum.'},	
+			
+				{src : 'img/gallery/gallery_grid2-12.jpg', url : 'portfolio_post_fw.html', post_type : 'gallery', category: 'portraits', title : 'Lorem ipsum dolor', description: 'Aliquam et dolor a dui imperdiet luctus. Etiam ultrices imperdiet nibh.'},
+			
+				{src : 'img/gallery/gallery_grid2-13.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Sed eget leo orci', description: 'Suspendisse tortor metus, suscipit eget vehicula in, hendrerit sed diam.'},	
+				
+				{src : 'img/gallery/gallery_grid2-14.jpg', url : 'portfolio_post_fw.html', post_type : 'text', category: 'fashion', title : 'Cras facilisis', description: 'Fusce pellentesque laoreet quam ac rutrum. Nunc lobortis odio et mauris.'},
+			
+				{src : 'img/gallery/gallery_grid2-15.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'portraits', title : 'Phasellus fringilla', description: 'Sed eget leo orci, ut pretium massa. Suspendisse tortor metus.'},
+			
+				{src : 'img/gallery/gallery_grid2-16.jpg', url : 'portfolio_post_fw.html', post_type : 'video', category: 'stories', title : 'Cras facilisis tellus', description: 'Proin dapibus arcu nec diam faucibus vestibulum. In hac habitasse platea.'},
+	
+				{src : 'img/gallery/gallery_grid2-17.jpg', url : 'portfolio_post_fw.html', post_type : 'image', category: 'stories', title : 'Sed eget leo orci', description: 'Suspendisse tortor metus, suscipit eget vehicula in, hendrerit sed diam.'},	
+				
+				{src : 'img/gallery/gallery_grid2-18.jpg', url : 'portfolio_post_fw.html', post_type : 'text', category: 'fashion', title : 'Cras facilisis', description: 'Fusce pellentesque laoreet quam ac rutrum. Nunc lobortis odio et mauris.'}
+						
+			];
+			$(window).load(function(){
+				$('#list').portfolio_addon({
+					type : 2,
+					load_count : 5,
+					items : items_set
+				});		
+			});
+			//]]
+        </script>        
+	</div> <!-- .fullscreen_block -->   
+    
+    <!--<div class="header2top"></div>-->
+    <script>
+		$(document).ready(function(){
+			jQuery('.image-grid').isotope('reLayout');
+		});
+		$(window).load(function(){
+			setTimeout("jQuery('.image-grid').isotope('reLayout')",1000);
+		});
+		$(window).resize(function(){
+			jQuery('.image-grid').isotope('reLayout');
+		});
+    </script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/theme.js"></script>
+    <div class="header2top"></div>
+</body>
+</html>

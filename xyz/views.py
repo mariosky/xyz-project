@@ -25,6 +25,10 @@ def logout_view(request):
     logout(request)
     return render_to_response('xyz/signin.html', {}, context_instance=RequestContext(request))
 
+def gallery_masonry(request):
+    paintings = Painting.objects.all()
+    return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings}, context_instance=RequestContext(request))
+
 
 
 
