@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- Mobile Specific Metas
+    +++++++++++++++++++++++++++ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="{{ STATIC_URL}}frame/img/favico.ico">
+
+    <link rel="apple-touch-icon" href="{{ STATIC_URL}}frame/img/apple_icons_57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL}}frame/img/apple_icons_72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL}}frame/img/apple_icons_114x114.png">
+
+    <title>Frame - Simple Blog</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme_settings.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/skin.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/color_theme.css" id="theme_color">
+        
+    <!--[if IE 8 ]>
+    <link rel="stylesheet" type="text/css" href="css/ie_css.css">
+    <script>
+        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+        for (var i = 0; i < e.length; i++) {
+            document.createElement(e[i]);
+        }		
+    </script>
+    <![endif]-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+  <header class="">
+        <div class="header_wrapper container">
+        	<a href="index.html" class="logo"><img src="{{ STATIC_URL}}frame/img/logo.png" alt=""  class="logo_def" width="125" height="39"><img src="{{ STATIC_URL}}frame/img/retina/logo.png" alt="" class="logo_retina" width="125" height="39"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)">HOME</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Fullscreen Gallery</a></li>
+                            <li><a href="home_vimeo.html">Vimeo Background</a></li>
+                            <li><a href="home_youtube.html">Youtube Background</a></li>
+                            <li><a href="home_background.html">Image Background</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">PAGES</a>
+                        <ul class="sub-menu">
+	                        <li><a href="wall.html">Fullwidth Wall</a></li>
+                            <li><a href="about.html">About</a></li>                                                        
+                          	<li><a href="grid.html">Grid</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                        </ul>                        
+                    </li>
+                    <li><a href="javascript:void(0)">FEATURES</a>
+                        <ul class="sub-menu">
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="shortcodes.html">Shortcodes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">PORTFOLIO</a>
+                        <ul class="sub-menu">
+                            <li><a href="portfolio_grid.html">Grid Portfolio</a></li>
+                            <li><a href="portfolio_masonry.html">Grid Portfolio with Masonry</a></li>
+							<li><a href="portfolio_post_fw.html">Fullscreen Portfolio Post</a></li>
+                            <li><a href="portfolio1.html">Portfolio 1 Column</a></li>
+                            <li><a href="portfolio2.html">Portfolio 2 Columns</a></li>
+                            <li><a href="portfolio3.html">Portfolio 3 Columns</a></li>
+                            <li><a href="portfolio4.html">Portfolio 4 Columns</a></li>
+                            <li><a href="portfolio_post.html">Portfolio Post</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">GALLERIES</a>
+                        <ul class="sub-menu">
+                            <li><a href="gallery_kenburns.html">Kenburns Gallery</a></li>
+                            <li><a href="gallery_grid.html">Grid Gallery</a></li>
+                            <li><a href="gallery_masonry.html">Grid Gallery with Masonry</a></li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-parent"><a href="javascript:void(0)">BLOG</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog_fullscreen.html">Fullscreen</a></li>
+                            <li><a href="blog_post_fw.html">Fullscreen Blog Post</a></li>
+                            <li><a href="blog_full.html">Full Width</a></li>                            
+                            <li><a href="blogpost_full.html">Blog Post</a></li>
+                            <li class="current-menu-parent"><a href="javascript:void(0)">With Sidebar</a>
+                                <ul class="sub-menu">
+                                    <li class="current-menu-item"><a href="blog_left.html">Left Sidebar</a></li>
+                                    <li><a href="blog_right.html">Right Sidebar</a></li>
+                                    <li><a href="blogpost_sidebar.html">Blog Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">CONTACTS</a>
+                        <ul class="sub-menu">
+	                        <li><a href="contact_fullscreen.html">Fullscreen</a></li>
+                            <li><a href="contact.html">Full Width</a></li>                            
+                            <li><a href="contact_sidebar.html">With Sidebar</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- .menu -->
+                <div class="clear"></div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main_wrapper">
+        <!-- C O N T E N T -->
+        <div class="content_wrapper">
+        <div class="container">
+                <div class="content_block left-sidebar row">
+                    <div class="fl-container span12">
+                        <div class="row">
+                            <div class="posts-block span9">
+                                <div class="contentarea">
+                                    
+                                    <div class="row-fluid">                                
+                                        <div class="span12 module_cont module_blog">
+                                        
+                                            <div class="blog_post_preview">
+	                                            <div class="blog_head">
+	                                                <span class="blogpost_type_ico post_type_gallery"></span>
+                                                	<div class="bg_title"><h3>{{ painting.title }}</h3></div>
+                                                    <div class="blogpost_meta">
+                                                        <span>{{ painting.published }}</span>
+                                                        <span><a href="#">{{ painting.author }}</a></span>
+                                                        <span>In <a href="#">{{ painting.generation }}</a></span>
+                                                    </div>
+                                                </div><!-- .blog_head -->
+                                                <div class="featured_image_full">
+													<img src="{{STATIC_URL}}{{painting.image}}" alt="" width="870" height="480"/>
+                                                </div><!-- .featured_image_full -->
+                                                <article class="contentarea">
+                                                {{ painting.summary }}
+                                                </article>
+                                            </div><!--.blog_post_preview -->
+
+                                           </div>
+                                    </div><!-- .row-fluid -->
+                                    
+                                </div><!-- .contentarea -->
+                            </div>
+                            <div class="left-sidebar-block span3">
+                                <div class="sidepanel widget_posts">
+                                    <div class="bg_title"><h3 class="sidebar_header">Parents</h3></div>
+                                    <ul class="recent_posts">
+
+                                        {% for p in painting.parents %}
+                                        <li>
+                                            <div class="recent_posts_img">
+                                                <img src="{{STATIC_URL}}{{p.image}}" alt="" width="88" height="88"/>
+                                            </div>
+                                            <div class="recent_posts_content">
+                                                <a href="blogpost_full.html" class="post_title">{{ p.title }}</a>
+
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div><!-- .sidepanel -->
+
+
+                            </div><!-- .left-sidebar -->
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                    </div><!-- .fl-container -->
+                    <div class="right-sidebar-block span3">
+                        <aside class="sidebar">
+							
+                        </aside>
+                    </div><!-- .right-sidebar -->
+                    <div class="clear"><!-- ClearFix --></div>
+                </div>
+            </div><!-- .container -->
+        </div><!-- .content_wrapper -->
+	
+    </div><!-- .main_wrapper -->
+
+    <footer>
+        <div class="footer_line container">
+            <div class="socials">
+            	<ul class="socials_list">
+                	<li><a href="#" class="ico_social-facebook"></a></li>
+                    <li><a href="#" class="ico_social-twitter"></a></li>
+                    <li><a href="#" class="ico_social-linked"></a></li>
+                    <li><a href="#" class="ico_social-delicious"></a></li>
+                    <li><a href="#" class="ico_social-vimeo"></a></li>
+                    <li><a href="#" class="ico_social-flickr"></a></li>
+                    <li><a href="#" class="ico_social-pinterest"></a></li>
+                    <li><a href="#" class="ico_social-tumblr"></a></li>                   
+                    <li><a href="#" class="ico_social-youtube"></a></li>                    
+                    <li><a href="#" class="ico_social-instagram"></a></li>
+                    <li><a href="#" class="ico_social-gplus"></a></li>
+                    <li><a href="#" class="ico_social-dribbble"></a></li>
+                </ul>            
+            </div>
+        	<div class="copyright">&copy; 2020 Frame HTML5 Photography Theme. All Rights Reserved.</div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/theme.js"></script>
+</body>
+</html>

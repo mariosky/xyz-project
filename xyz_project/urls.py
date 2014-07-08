@@ -10,6 +10,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'xyz.views.gallery', name='gallery'),
+
+    url(r'^gallery_paint/(\d*)/$', 'xyz.views.gallery_paint', name='gallery_paint'),
     url(r'^masonry$', 'xyz.views.gallery_masonry', name='gallery_masonry'),
     url(r'^index.html$', 'xyz.views.gallery', name='gallery'),
     url(r'^last_generation$', 'xyz.views.generation', name='generation'),

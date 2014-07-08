@@ -30,7 +30,9 @@ def gallery_masonry(request):
     gens = Generation.objects.all()
     return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings, "gens":gens}, context_instance=RequestContext(request))
 
-
+def gallery_paint(request, id):
+    painting = Painting.objects.get(pk=id)
+    return render_to_response('xyz/blog_left.html', { "painting":painting }, context_instance=RequestContext(request))
 
 
 def gallery(request):
