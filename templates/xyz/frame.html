@@ -77,7 +77,7 @@
 		gallery_set = [	//Gallery Data
             {% for painting in paintings %}
 
-          	{image : "{{STATIC_URL}}{{ painting.image }}", thmb : '', alt : 'Awesome Theme', fit : 'cover', title : "{{ painting.title }}", description: ""},
+          	{image : "{{STATIC_URL}}{{ painting.image }}", thmb : '', alt : '', fit : 'cover', title : "{{ painting.title }}", description: ""},
 
 
             {% endfor %}
