@@ -30,6 +30,12 @@ def gallery_masonry(request):
     gens = Generation.objects.all()
     return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings, "gens":gens}, context_instance=RequestContext(request))
 
+def artist(request, id):
+    usr = User.objects.get(pk=id)
+    paintings = Painting.objects.filter(author=usr)
+    return render_to_response('xyz/blog_post_fw', { "paintings":paintings, "usr":usr}, context_instance=RequestContext(request))
+
+
 def gallery_paint(request, id):
     painting = Painting.objects.get(pk=id)
     return render_to_response('xyz/blog_left.html', { "painting":painting }, context_instance=RequestContext(request))

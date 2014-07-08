@@ -10,23 +10,23 @@
     <!-- Mobile Specific Metas
     +++++++++++++++++++++++++++ -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="img/favico.ico">
+    <link rel="shortcut icon" href="{{ STATIC_URL}}frame/img/favico.ico">
 
-    <link rel="apple-touch-icon" href="img/apple_icons_57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple_icons_72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple_icons_114x114.png">
+    <link rel="apple-touch-icon" href="{{ STATIC_URL}}frame/img/apple_icons_57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL}}frame/img/apple_icons_72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL}}frame/img/apple_icons_114x114.png">
 
     <title>Frame - Fullscreen Blog Post</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">    
-    <link rel="stylesheet" type="text/css" href="css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/theme_settings.css">
-    <link rel="stylesheet" type="text/css" href="css/skin.css">
-	<link rel="stylesheet" type="text/css" href="css/color_theme.css" id="theme_color">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme_settings.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/skin.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/color_theme.css" id="theme_color">
         
     <!--[if IE 8 ]>
     <link rel="stylesheet" type="text/css" href="css/ie_css.css">
@@ -43,7 +43,7 @@
 <body class="fullscreen_layout">
 	<header class="">
         <div class="header_wrapper container">
-        	<a href="index.html" class="logo"><img src="img/logo.png" alt=""  class="logo_def" width="125" height="39"><img src="img/retina/logo.png" alt="" class="logo_retina" width="125" height="39"></a>
+        	<a href="index.html" class="logo"><img src="{{ STATIC_URL}}frame/img/logo.png" alt=""  class="logo_def" width="125" height="39"><img src="{{ STATIC_URL}}frame/img/retina/logo.png" alt="" class="logo_retina" width="125" height="39"></a>
             <nav>
                 <ul class="menu">
                     <li><a href="javascript:void(0)">HOME</a>
@@ -118,7 +118,7 @@
     
     <div class="fullscreen_block">
     	<div class="fullscreen_title">
-        	<h1>Pellentesque Egestas</h1>
+        	<h1>{{ usr.first_name }} {{ usr.last_name }}</h1>
         	<a href="javascript:history.back()" class="btn_close"></a>
             <!--<a href="#" class="btn_next"></a>
             <a href="#" class="btn_prev"></a>-->
@@ -128,9 +128,9 @@
             <div class="featured_slider_wrapper fullscreen_container">
             	<a href="javascript:void(0)" class="featured_prev"></a><a href="javascript:void(0)" class="featured_next"></a>
             	<ul class="featured_slider-list">
-                	<li><img src="img/pictures/portfolio_post1.jpg" alt="image1" /></li>
-                    <li><img src="img/pictures/portfolio_post2.jpg" alt="image2" /></li>
-                    <li><img src="img/pictures/portfolio_post3.jpg" alt="image3" /></li>
+                 {% for painting in paintings %}
+                	<li><img src="{{STATIC_URL}}{{ painting.image }}" alt="{{ painting.title }}" /></li>
+                 {% endfor %}
                 </ul>
             </div>
         </div><!-- .fullscreen_content_wrapper -->
@@ -140,10 +140,9 @@
             <div class="fullscreen_content_padding">
                 <div class="row-fluid">
                     <div class="span12 module_cont module_fs_meta module_none_padding">
-                        <p><span>25 April 2019</span> in <a href="#">Category</a></p>
+                        <p><span>Info</span>  <a href="#">Info</a></p>
                         <p><span>Author:</span> John Doe</p>
-                        <p><span>Tags:</span> <a href="#">lorem</a>, <a href="#">ipsum</a>, <a href="#">dolor</a>, <a href="#">sit amet</a>, <a href="#">egestas</a></p>
-                    </div>								
+                    </div>
                 </div><!-- .row-fluid -->
 
                 <div class="row-fluid">
@@ -157,17 +156,8 @@
 
                 <div class="row-fluid">
                     <div class="span12 module_cont module_text_area module_small_padding">
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia ostras per inceptos himenaeos. In vehicula placerat pharetra.</p>
-                        <p>Pellentesque vestibulum erat eu libero viverra consectetur ac eget turpis. Pellentesque magna enim, iaculis ut eleifend egetus nec ligula. Nullam mollis posuere libero, 
-                        vitae porta magna fringilla vitae. Quisque ullamcorper nulla nec tortor vehicula vele <a href="#">aliquet nibh</a> dignissim. Mauris non ligula augue, ac laoreet antet fusce enim magna, 
-                        tempus quis lobortis eu, pharetra eu ligula.</p>
-                        <p>Nullam eu lacus neque, ut vulputate nulla. Morbi a felis a nunc viverra placerat. Curabitur molestie erat fermentum nibh suscipit dictum. Nullam eget augue sit amet velit 
-                        adipiscing malesuada vel in mauris. Mauris egestas sodales felis vel faucibus. Aliquam vehicula nisi vel enim dapibus tempor. Cras rutrum quam at tem cursus a porta lorem luctus. 
-                        Fusce vitae dolor in turpis posuere rhoncus sed ac m praesent venenatis, faucibus a varius lobortis ante id eros luctus consequat eget augue sit amet velit. Mauris nisi lectus, 
-                        sollicitudin ac pulvinar nec, pulvinar ac odio. Nunc semper dignissim vehicula. Nunc id lorem nec quam facilisis tincidunt. Phasellus nec urna in odio sollicitudin faucibus 
-                        sed tristique ligula. Fusce accumsan varius libero. Proin vitae velit a purus pulvinar cursus eu a erat. Donec molestie tempor eros faucibus porttitor.</p>
-                        <p>Fusce dui enim, mattis id suscipit nec, posuere a augue sodales sapien sit amet justo ultricies <a href="#">ultrices pretium.</a></p>
-                    </div>								
+                    No more information about the artist at the moment
+                    </div>
                 </div><!-- .row-fluid -->
 
             </div><!-- .fullscreen_content_padding -->
@@ -176,6 +166,6 @@
 	</div>    
     <div class="header2top"></div>
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/theme.js"></script>	
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/theme.js"></script>
 </body>
 </html>
