@@ -10,23 +10,23 @@
     <!-- Mobile Specific Metas
     +++++++++++++++++++++++++++ -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="img/favico.ico">
+    <link rel="shortcut icon" href="{{ STATIC_URL}}frame/img/favico.ico">
 
-    <link rel="apple-touch-icon" href="img/apple_icons_57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple_icons_72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple_icons_114x114.png">
+    <link rel="apple-touch-icon" href="{{ STATIC_URL}}frame/img/apple_icons_57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL}}frame/img/apple_icons_72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL}}frame/img/apple_icons_114x114.png">
 
     <title>Frame - Gallery with Ken Burn's Effect</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">    
-    <link rel="stylesheet" type="text/css" href="css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/theme_settings.css">
-    <link rel="stylesheet" type="text/css" href="css/skin.css">
-	<link rel="stylesheet" type="text/css" href="css/color_theme.css" id="theme_color">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/theme_settings.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/skin.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL}}frame/css/color_theme.css" id="theme_color">
         
     <!--[if IE 8 ]>
     <link rel="stylesheet" type="text/css" href="css/ie_css.css">
@@ -38,77 +38,30 @@
     </script>
     <![endif]-->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/kenburns.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL}}frame/js/kenburns.js"></script>
 </head>
 
 <body class="fullscreen_layout">
 	<header class="">
         <div class="header_wrapper container">
         	<a href="index.html" class="logo"><img src="img/logo.png" alt=""  class="logo_def" width="125" height="39"><img src="img/retina/logo.png" alt="" class="logo_retina" width="125" height="39"></a>
-            <nav>
+ <nav>
                 <ul class="menu">
-                    <li><a href="javascript:void(0)">HOME</a>
+                    <li><a href="/index.html">HOME</a> </li>
+                    <li><a href="javascript:void(0)">ABOUT</a> </li>
+                    <li><a href="/masonry">GENERATIONS</a> </li>
+                    <li class="current-menu-parent"><a href="javascript:void(0)">ARTISTS</a>
                         <ul class="sub-menu">
-                            <li><a href="index.html">Fullscreen Gallery</a></li>
-                            <li><a href="home_vimeo.html">Vimeo Background</a></li>
-                            <li><a href="home_youtube.html">Youtube Background</a></li>
-                            <li><a href="home_background.html">Image Background</a></li>
+                              {% for artist in artists %}
+                            <li><a href="/artist/{{ artist.id }}"> {{ artist.first_name }} {{ artist.last_name }} </a></li>
+                         {% endfor %}
+
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0)">PAGES</a>
+                    <li><a href="javascript:void(0)">GALLERIES</a>
                         <ul class="sub-menu">
-	                        <li><a href="wall.html">Fullwidth Wall</a></li>
-                            <li><a href="about.html">About</a></li>                                                        
-                          	<li><a href="grid.html">Grid</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="sitemap.html">Sitemap</a></li>
-                        </ul>                        
-                    </li>
-                    <li><a href="javascript:void(0)">FEATURES</a>
-                        <ul class="sub-menu">
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="shortcodes.html">Shortcodes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)">PORTFOLIO</a>
-                        <ul class="sub-menu">
-                            <li><a href="portfolio_grid.html">Grid Portfolio</a></li>
-                            <li><a href="portfolio_masonry.html">Grid Portfolio with Masonry</a></li>
-							<li><a href="portfolio_post_fw.html">Fullscreen Portfolio Post</a></li>
-                            <li><a href="portfolio1.html">Portfolio 1 Column</a></li>
-                            <li><a href="portfolio2.html">Portfolio 2 Columns</a></li>
-                            <li><a href="portfolio3.html">Portfolio 3 Columns</a></li>
-                            <li><a href="portfolio4.html">Portfolio 4 Columns</a></li>
-                            <li><a href="portfolio_post.html">Portfolio Post</a></li>
-                        </ul>
-                    </li>
-                    <li class="current-menu-parent"><a href="javascript:void(0)">GALLERIES</a>
-                        <ul class="sub-menu">
-                            <li class="current-menu-item"><a href="gallery_kenburns.html">Kenburns Gallery</a></li>
-                            <li><a href="gallery_grid.html">Grid Gallery</a></li>
-                            <li><a href="gallery_masonry.html">Grid Gallery with Masonry</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)">BLOG</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog_fullscreen.html">Fullscreen</a></li>
-                            <li><a href="blog_post_fw.html">Fullscreen Blog Post</a></li>
-                            <li><a href="blog_full.html">Full Width</a></li>                            
-                            <li><a href="blogpost_full.html">Blog Post</a></li>
-                            <li><a href="javascript:void(0)">With Sidebar</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog_left.html">Left Sidebar</a></li>
-                                    <li><a href="blog_right.html">Right Sidebar</a></li>
-                                    <li><a href="blogpost_sidebar.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)">CONTACTS</a>
-                        <ul class="sub-menu">
-	                        <li><a href="contact_fullscreen.html">Fullscreen</a></li>
-                            <li><a href="contact.html">Full Width</a></li>                            
-                            <li><a href="contact_sidebar.html">With Sidebar</a></li>
+                            <li><a href="/gallery_kenburns">Kenburns Gallery</a></li>
+                            <li><a href="/gallery_grid">Grid Gallery</a></li>
                         </ul>
                     </li>
                 </ul><!-- .menu -->
@@ -130,26 +83,9 @@
             $('#kenburns').attr('width', $(window).width());
             $('#kenburns').attr('height', $(window).height());
             $('#kenburns').kenburns({
-                images:['img/gallery/gallery01.jpg',
-                        'img/gallery/gallery02.jpg',
-                        'img/gallery/gallery03.jpg',
-                        'img/gallery/gallery04.jpg',
-                        'img/gallery/gallery05.jpg',
-                        'img/gallery/gallery06.jpg',
-                        'img/gallery/gallery07.jpg',
-                        'img/gallery/gallery08.jpg',
-                        'img/gallery/gallery09.jpg',
-                        'img/gallery/gallery10.jpg',
-                        'img/gallery/gallery11.jpg',
-                        'img/gallery/gallery12.jpg',
-                        'img/gallery/gallery13.jpg',
-                        'img/gallery/gallery14.jpg',
-                        'img/gallery/gallery15.jpg',
-                        'img/gallery/gallery16.jpg',
-                        'img/gallery/gallery17.jpg',
-                        'img/gallery/gallery18.jpg',
-                        'img/gallery/gallery19.jpg',						
-                        'img/gallery/gallery20.jpg'
+                images:[{% for painting in paintings %}
+                                '{{STATIC_URL}}{{ painting.image }}',
+                        {% endfor %}
                         ],
                 frames_per_second: 30,
                 display_time: 5000,
@@ -165,26 +101,9 @@
             $('#kenburns').attr('width', $(window).width());
             $('#kenburns').attr('height', $(window).height());
             $('#kenburns').kenburns({
-                images:['img/gallery/gallery01.jpg',
-                        'img/gallery/gallery02.jpg',
-                        'img/gallery/gallery03.jpg',
-                        'img/gallery/gallery04.jpg',
-                        'img/gallery/gallery05.jpg',
-                        'img/gallery/gallery06.jpg',
-                        'img/gallery/gallery07.jpg',
-                        'img/gallery/gallery08.jpg',
-                        'img/gallery/gallery09.jpg',
-                        'img/gallery/gallery10.jpg',
-                        'img/gallery/gallery11.jpg',
-                        'img/gallery/gallery12.jpg',
-                        'img/gallery/gallery13.jpg',
-                        'img/gallery/gallery14.jpg',
-                        'img/gallery/gallery15.jpg',
-                        'img/gallery/gallery16.jpg',
-                        'img/gallery/gallery17.jpg',
-                        'img/gallery/gallery18.jpg',
-                        'img/gallery/gallery19.jpg',						
-                        'img/gallery/gallery20.jpg'
+                images:[ {% for painting in paintings %}
+                                '{{STATIC_URL}}{{ painting.image }}',
+                        {% endfor %}
                         ],
                 frames_per_second: 30,
                 display_time: 5000,
@@ -196,7 +115,7 @@
     </script>
     
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/theme.js"></script>	
+    <script type="text/javascript" src="{{ STATIC_URL}}frame/js/theme.js"></script>
     <div class="header2top"></div>
 </body>
 </html>
