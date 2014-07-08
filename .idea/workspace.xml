@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/about.html" afterPath="$PROJECT_DIR$/templates/xyz/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/blog_left.html" afterPath="$PROJECT_DIR$/templates/xyz/blog_left.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/blog_post_fw.html" afterPath="$PROJECT_DIR$/templates/xyz/blog_post_fw.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/frame.html" afterPath="$PROJECT_DIR$/templates/xyz/frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/gallery_grid.html" afterPath="$PROJECT_DIR$/templates/xyz/gallery_grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/gallery_kenburns.html" afterPath="$PROJECT_DIR$/templates/xyz/gallery_kenburns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/portfolio_masonry.html" afterPath="$PROJECT_DIR$/templates/xyz/portfolio_masonry.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +28,7 @@
       <file leaf-file-name="about.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="88" selection-start="5533" selection-end="5533" vertical-scroll-proportion="0.5345572" vertical-offset="825" max-vertical-offset="4800">
+            <state line="110" column="228" selection-start="10333" selection-end="10333" vertical-scroll-proportion="0.53023756" vertical-offset="1159" max-vertical-offset="4875">
               <folding />
             </state>
           </provider>
@@ -831,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="88" selection-start="5533" selection-end="5533" vertical-scroll-proportion="0.5345572" vertical-offset="825" max-vertical-offset="4800">
+        <state line="110" column="228" selection-start="10333" selection-end="10333" vertical-scroll-proportion="0.53023756" vertical-offset="1159" max-vertical-offset="4875">
           <folding />
         </state>
       </provider>
