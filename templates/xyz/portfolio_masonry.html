@@ -138,7 +138,7 @@
            {% for painting in paintings %}
         	<div data-category="{{ painting.generation }}" class="grid_gallery-item {{ painting.generation|cut:" "}} element">
 				<div class="filter_img gallery_item">
-                    <a href="portfolio_post_fw.html">
+                    <a href="/gallery_paint/{{ painting.id }}">
                         <img src="{{STATIC_URL}}{{ painting.image }}" alt="" width="384" height="272">
                         <div class="gallery_fadder"></div>
                         <div class="ico_gallery"></div><!-- .ico_gallery -->
