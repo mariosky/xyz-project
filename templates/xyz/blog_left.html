@@ -157,13 +157,13 @@
                                     <div class="bg_title"><h3 class="sidebar_header">Parents</h3></div>
                                     <ul class="recent_posts">
 
-                                        {% for p in painting.parents %}
+                                        {% for p in painting.parents.all %}
                                         <li>
                                             <div class="recent_posts_img">
                                                 <img src="{{STATIC_URL}}{{p.image}}" alt="" width="88" height="88"/>
                                             </div>
                                             <div class="recent_posts_content">
-                                                <a href="blogpost_full.html" class="post_title">{{ p.title }}</a>
+                                                <a href="/gallery_paint/{{ p.id }}" class="post_title">{{ p.title }}</a>
 
                                             </div>
                                             <div class="clear"></div>
