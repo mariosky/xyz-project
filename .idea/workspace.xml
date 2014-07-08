@@ -55,7 +55,7 @@
       <file leaf-file-name="blog_left.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="100" selection-start="8242" selection-end="8242" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
+            <state line="137" column="78" selection-start="8220" selection-end="8220" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
               <folding>
                 <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -159,7 +159,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="203" />
+    <option name="x" value="349" />
     <option name="y" value="22" />
     <option name="width" value="1965" />
     <option name="height" value="807" />
@@ -549,7 +549,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="203" y="22" width="1965" height="807" extended-state="0" />
+    <frame x="349" y="22" width="1965" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -796,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="100" selection-start="8242" selection-end="8242" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
+        <state line="137" column="78" selection-start="8220" selection-end="8220" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
           <folding>
             <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
