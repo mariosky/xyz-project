@@ -51,8 +51,8 @@
                     <li><a href="/masonry">GENERATIONS</a> </li>
                     <li class="current-menu-parent"><a href="javascript:void(0)">ARTISTS</a>
                         <ul class="sub-menu">
-                              {% for author in authors %}
-                            <li><a href="/artist/{{ author.id }}"> {{ usr.first_name }} {{ usr.last_name }} </a></li>
+                              {% for artist in artists %}
+                            <li><a href="/artist/{{ artist.id }}"> {{ artist.first_name }} {{ artist.last_name }} </a></li>
                          {% endfor %}
 
                         </ul>
