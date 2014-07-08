@@ -33,15 +33,13 @@ def gallery_masonry(request):
 
 def gallery_grid(request):
     paintings = Painting.objects.all()
-    gens = Generation.objects.all()
     artists = User.objects.filter(id__gt=2)
-    return render_to_response('xyz/portfolio_grid.html', { "paintings":paintings, "gens":gens, "artists":artists}, context_instance=RequestContext(request))
+    return render_to_response('xyz/gallery_grid.html', { "paintings":paintings, "artists":artists}, context_instance=RequestContext(request))
 
 def gallery_kenburns(request):
     paintings = Painting.objects.all()
-    gens = Generation.objects.all()
     artists = User.objects.filter(id__gt=2)
-    return render_to_response('xyz/portfolio_kenburns.html', { "paintings":paintings, "gens":gens, "artists":artists}, context_instance=RequestContext(request))
+    return render_to_response('xyz/gallery_kenburns.html', { "paintings":paintings,  "artists":artists}, context_instance=RequestContext(request))
 
 
 
