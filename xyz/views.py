@@ -33,7 +33,7 @@ def gallery_masonry(request):
 def artist(request, id):
     usr = User.objects.get(pk=id)
     paintings = Painting.objects.filter(author=usr)
-    return render_to_response('xyz/blog_post_fw', { "paintings":paintings, "usr":usr}, context_instance=RequestContext(request))
+    return render_to_response('xyz/blog_post_fw.html', { "paintings":paintings, "usr":usr}, context_instance=RequestContext(request))
 
 
 def gallery_paint(request, id):
