@@ -61,6 +61,10 @@ def gallery(request):
     artists = User.objects.filter(id__gt=2)
     return render_to_response('xyz/frame.html', { "paintings":paintings, "artists":artists}, context_instance=RequestContext(request))
 
+def about(request):
+    paintings = Painting.objects.all()
+    artists = User.objects.filter(id__gt=2)
+    return render_to_response('xyz/about.html', { "paintings":paintings, "artists":artists}, context_instance=RequestContext(request))
 
 def index(request):
     if request.user.is_authenticated():
