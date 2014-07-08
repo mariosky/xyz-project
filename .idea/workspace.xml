@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/blog_left.html" afterPath="$PROJECT_DIR$/templates/xyz/blog_left.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/blog_post_fw.html" afterPath="$PROJECT_DIR$/templates/xyz/blog_post_fw.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/frame.html" afterPath="$PROJECT_DIR$/templates/xyz/frame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/gallery_grid.html" afterPath="$PROJECT_DIR$/templates/xyz/gallery_grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/gallery_kenburns.html" afterPath="$PROJECT_DIR$/templates/xyz/gallery_kenburns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/portfolio_masonry.html" afterPath="$PROJECT_DIR$/templates/xyz/portfolio_masonry.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,16 +39,16 @@
       <file leaf-file-name="gallery_kenburns.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_kenburns.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="26" selection-start="3402" selection-end="3523" vertical-scroll-proportion="-9.125" vertical-offset="711" max-vertical-offset="1890">
+            <state line="41" column="0" selection-start="223" selection-end="2300" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery_grid.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gallery_grid.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_grid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="69" selection-start="3227" selection-end="3227" vertical-scroll-proportion="-26.875" vertical-offset="300" max-vertical-offset="11160">
+            <state line="85" column="28" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.46544278" vertical-offset="844" max-vertical-offset="1830">
               <folding />
             </state>
           </provider>
@@ -63,7 +57,7 @@
       <file leaf-file-name="portfolio_masonry.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/xyz/portfolio_masonry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="69" selection-start="3701" selection-end="3701" vertical-scroll-proportion="-25.0" vertical-offset="360" max-vertical-offset="2310">
+            <state line="92" column="29" selection-start="4963" selection-end="4995" vertical-scroll-proportion="-24.375" vertical-offset="795" max-vertical-offset="2310">
               <folding />
             </state>
           </provider>
@@ -87,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_post_fw.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="blog_post_fw.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/xyz/blog_post_fw.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="69" selection-start="3471" selection-end="3471" vertical-scroll-proportion="0.35205182" vertical-offset="604" max-vertical-offset="1935">
+            <state line="62" column="69" selection-start="3471" selection-end="3471" vertical-scroll-proportion="-13.583333" vertical-offset="604" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
@@ -158,11 +152,11 @@
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
         <option value="$PROJECT_DIR$/xyz/views.py" />
         <option value="$PROJECT_DIR$/templates/xyz/gallery_kenburns.html" />
-        <option value="$PROJECT_DIR$/templates/xyz/gallery_grid.html" />
         <option value="$PROJECT_DIR$/templates/xyz/portfolio_masonry.html" />
         <option value="$PROJECT_DIR$/templates/xyz/frame.html" />
         <option value="$PROJECT_DIR$/templates/xyz/blog_left.html" />
         <option value="$PROJECT_DIR$/templates/xyz/blog_post_fw.html" />
+        <option value="$PROJECT_DIR$/templates/xyz/gallery_grid.html" />
       </list>
     </option>
   </component>
@@ -786,27 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_kenburns.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="26" selection-start="3402" selection-end="3523" vertical-scroll-proportion="-9.125" vertical-offset="711" max-vertical-offset="1890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="69" selection-start="3227" selection-end="3227" vertical-scroll-proportion="-26.875" vertical-offset="300" max-vertical-offset="11160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/portfolio_masonry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="69" selection-start="3701" selection-end="3701" vertical-scroll-proportion="-25.0" vertical-offset="360" max-vertical-offset="2310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/frame.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="69" selection-start="3669" selection-end="3669" vertical-scroll-proportion="-14.208333" vertical-offset="604" max-vertical-offset="1530">
@@ -823,7 +796,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/blog_post_fw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="69" selection-start="3471" selection-end="3471" vertical-scroll-proportion="0.35205182" vertical-offset="604" max-vertical-offset="1935">
+        <state line="62" column="69" selection-start="3471" selection-end="3471" vertical-scroll-proportion="-13.583333" vertical-offset="604" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_kenburns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="223" selection-end="2300" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/portfolio_masonry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="29" selection-start="4963" selection-end="4995" vertical-scroll-proportion="-24.375" vertical-offset="795" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="28" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.46544278" vertical-offset="844" max-vertical-offset="1830">
           <folding />
         </state>
       </provider>
