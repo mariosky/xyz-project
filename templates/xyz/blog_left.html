@@ -51,14 +51,9 @@
                     <li><a href="/masonry">GENERATIONS</a> </li>
                     <li><a href="javascript:void(0)">ARTISTS</a>
                         <ul class="sub-menu">
-                            <li><a href="portfolio_grid.html">Grid Portfolio</a></li>
-                            <li><a href="portfolio_masonry.html">Grid Portfolio with Masonry</a></li>
-							<li><a href="portfolio_post_fw.html">Fullscreen Portfolio Post</a></li>
-                            <li><a href="portfolio1.html">Portfolio 1 Column</a></li>
-                            <li><a href="portfolio2.html">Portfolio 2 Columns</a></li>
-                            <li><a href="portfolio3.html">Portfolio 3 Columns</a></li>
-                            <li><a href="portfolio4.html">Portfolio 4 Columns</a></li>
-                            <li><a href="portfolio_post.html">Portfolio Post</a></li>
+                         {% for author in authors %}
+                            <li><a href="/artist/{{ author.id }}"> {{ usr.first_name }} {{ usr.last_name }} </a></li>
+                         {% endfor %}
                         </ul>
                     </li>
                     <li><a href="javascript:void(0)">GALLERIES</a>
@@ -66,13 +61,6 @@
                             <li><a href="gallery_kenburns.html">Kenburns Gallery</a></li>
                             <li><a href="gallery_grid.html">Grid Gallery</a></li>
                             <li><a href="gallery_masonry.html">Grid Gallery with Masonry</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)">CONTACTS</a>
-                        <ul class="sub-menu">
-	                        <li><a href="contact_fullscreen.html">Fullscreen</a></li>
-                            <li><a href="contact.html">Full Width</a></li>                            
-                            <li><a href="contact_sidebar.html">With Sidebar</a></li>
                         </ul>
                     </li>
                 </ul><!-- .menu -->

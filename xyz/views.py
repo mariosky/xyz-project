@@ -28,22 +28,26 @@ def logout_view(request):
 def gallery_masonry(request):
     paintings = Painting.objects.all()
     gens = Generation.objects.all()
-    return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings, "gens":gens}, context_instance=RequestContext(request))
+    artists = User.objects.filter(id__gt=2)
+    return render_to_response('xyz/portfolio_masonry.html', { "paintings":paintings, "gens":gens, "artists":artists}, context_instance=RequestContext(request))
 
 def artist(request, id):
     usr = User.objects.get(pk=id)
     paintings = Painting.objects.filter(author=usr)
-    return render_to_response('xyz/blog_post_fw.html', { "paintings":paintings, "usr":usr}, context_instance=RequestContext(request))
+    artists = User.objects.filter(id__gt=2)
+    return render_to_response('xyz/blog_post_fw.html', { "paintings":paintings, "usr":usr, "artists":artists}, context_instance=RequestContext(request))
 
 
 def gallery_paint(request, id):
     painting = Painting.objects.get(pk=id)
-    return render_to_response('xyz/blog_left.html', { "painting":painting }, context_instance=RequestContext(request))
+    artists = User.objects.filter(id__gt=2)
+    return render_to_response('xyz/blog_left.html', { "painting":painting , "artists":artists}, context_instance=RequestContext(request))
 
 
 def gallery(request):
     paintings = Painting.objects.all()
-    return render_to_response('xyz/frame.html', { "paintings":paintings}, context_instance=RequestContext(request))
+    artists = User.objects.filter(id__gt=2)
+    return render_to_response('xyz/frame.html', { "paintings":paintings, "artists":artists}, context_instance=RequestContext(request))
 
 
 def index(request):
