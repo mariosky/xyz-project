@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="79" selection-start="1177" selection-end="1177" vertical-scroll-proportion="-9.4" vertical-offset="305" max-vertical-offset="3195">
+            <state line="36" column="79" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.25053304" vertical-offset="305" max-vertical-offset="3195">
               <folding>
                 <element signature="e#30#88#0" expanded="true" />
               </folding>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery_grid.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gallery_grid.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_grid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="19" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.712743" vertical-offset="0" max-vertical-offset="1830">
+            <state line="90" column="17" selection-start="4683" selection-end="4683" vertical-scroll-proportion="-30.0" vertical-offset="630" max-vertical-offset="1830">
               <folding />
             </state>
           </provider>
@@ -771,15 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyz/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="79" selection-start="1177" selection-end="1177" vertical-scroll-proportion="-9.4" vertical-offset="305" max-vertical-offset="3195">
-          <folding>
-            <element signature="e#30#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/frame.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="69" selection-start="3669" selection-end="3669" vertical-scroll-proportion="-14.208333" vertical-offset="604" max-vertical-offset="1530">
@@ -817,8 +808,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/gallery_grid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.712743" vertical-offset="0" max-vertical-offset="1830">
+        <state line="90" column="17" selection-start="4683" selection-end="4683" vertical-scroll-proportion="-30.0" vertical-offset="630" max-vertical-offset="1830">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyz/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="79" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.25053304" vertical-offset="305" max-vertical-offset="3195">
+          <folding>
+            <element signature="e#30#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -72,7 +72,7 @@
     
     <div class="fullscreen_block">
 		<div class="fs_grid_module">
-        
+        {% for painting in paintings %}
         	<div class="grid_gallery-item">
             	<div class="item_hover">
                     <div class="item_hover-img">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div><!-- .grid_gallery-item -->
-
+        {% endfor %}
 
 
             <div class="clear"></div>
