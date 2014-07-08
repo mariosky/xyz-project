@@ -55,7 +55,7 @@
       <file leaf-file-name="blog_left.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="97" selection-start="8239" selection-end="8239" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
+            <state line="137" column="100" selection-start="8242" selection-end="8242" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
               <folding>
                 <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -796,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="97" selection-start="8239" selection-end="8239" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
+        <state line="137" column="100" selection-start="8242" selection-end="8242" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
           <folding>
             <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
