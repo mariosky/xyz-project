@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c20cf09d-061d-4f1a-8dba-2fea65dbe21b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xyz/views.py" afterPath="$PROJECT_DIR$/xyz/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/xyz/blog_left.html" afterPath="$PROJECT_DIR$/templates/xyz/blog_left.html" />
     </list>
     <ignored path="XYZ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xyz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="52" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0846395" vertical-offset="261" max-vertical-offset="2745">
+            <state line="40" column="118" selection-start="1365" selection-end="1365" vertical-scroll-proportion="-5.16" vertical-offset="261" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_left.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="blog_left.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="57" selection-start="525" selection-end="546" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2370">
+            <state line="137" column="97" selection-start="8239" selection-end="8239" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
               <folding>
                 <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -151,10 +151,10 @@
         <option value="$PROJECT_DIR$/templates/xyz/gen_view.html" />
         <option value="$PROJECT_DIR$/templates/xyz/frame.html" />
         <option value="$PROJECT_DIR$/templates/xyz/portfolio_masonry.html" />
-        <option value="$PROJECT_DIR$/templates/xyz/blog_left.html" />
         <option value="$PROJECT_DIR$/xyz_project/urls.py" />
         <option value="$PROJECT_DIR$/templates/xyz/blog_post_fw.html" />
         <option value="$PROJECT_DIR$/xyz/views.py" />
+        <option value="$PROJECT_DIR$/templates/xyz/blog_left.html" />
       </list>
     </option>
   </component>
@@ -752,22 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="57" selection-start="525" selection-end="546" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2370">
-          <folding>
-            <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="421" selection-end="421" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xyz/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="10" selection-start="554" selection-end="560" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="570">
@@ -798,8 +782,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xyz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="52" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0846395" vertical-offset="261" max-vertical-offset="2745">
+        <state line="40" column="118" selection-start="1365" selection-end="1365" vertical-scroll-proportion="-5.16" vertical-offset="261" max-vertical-offset="2745">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyz_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="421" selection-end="421" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/xyz/blog_left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="97" selection-start="8239" selection-end="8239" vertical-scroll-proportion="0.3115016" vertical-offset="885" max-vertical-offset="2370">
+          <folding>
+            <element signature="tag#ul#0;tag#nav#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
